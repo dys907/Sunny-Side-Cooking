@@ -20,6 +20,14 @@
     left: 40vw;
     text-align:center;
 }
+#upload {
+    position:absolute;
+    width: 20vw;
+    height: 40vh;
+    top: 20vh;
+    left: 40vw;
+
+}
 .center {
     text-align: center;
 }
@@ -34,9 +42,9 @@
 
 }
 .titleFont {
-    font-size: 5vh;
+    font-size: 7vh;
 }
 .subTitleFont {
-    font-size: 3vh;
+    font-size: 4vh;
 }
 

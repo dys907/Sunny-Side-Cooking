@@ -1,0 +1,42 @@
+#mainMenu {
+    position: absolute;
+    left: 0;
+    bottom: 5vw;
+    text-align:center;
+    width: 100%;
+}
+#recipePicture {
+    position:absolute;
+    width: 20vw;
+    height: 30vh;
+    top: 30vh;
+    left: 40vw;
+}
+#level {
+    position:absolute;
+    width: 20vw;
+    height: 30vh;
+    top: 70vh;
+    left: 40vw;
+    text-align:center;
+}
+.center {
+    text-align: center;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color:white;
+    text-align:center;
+
+}
+.titleFont {
+    font-size: 5vh;
+}
+.subTitleFont {
+    font-size: 3vh;
+}
+

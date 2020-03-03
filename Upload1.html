@@ -22,7 +22,7 @@
     <!------------------------>
     <!-- Your own CSS files -->
     <!------------------------>
-    <link rel="stylesheet" type="text/css" href="upload.css">
+    <link rel="stylesheet" type="text/css" href="style/upload.css">
 </head>
 
 <body>
@@ -37,27 +37,41 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
                 <a href="Upload1.html" class="nav-item nav-link active">Title</a>
-                <a href="upload2.html" class="nav-item nav-link">Photo</a>
-                <a href="#" class="nav-item nav-link">Ingredients</a>
-                <a href="#" class="nav-item nav-link">Instructions</a>
-                <a href="#" class="nav-item nav-link">Description</a>
-                <a href="#" class="nav-item nav-link">Reviews</a>
+                <a href="upload2.html" class="nav-item nav-link">Ingredients</a>
+                <a href="Upload3.html" class="nav-item nav-link">Submit</a>
             </div>
         </div>
     </nav>
 
-    <h1 id="mainhead" style="font-size: 72;">Name Your Recipe</h1>
-
-
-    <!-- Search form -->
-    <div id="searchbar">
-        <form class="form-inline d-flex justify-content-center md-form form-sm mt-2">
-            <i class="fas fa-search" aria-hidden="true"></i>
-            <input class="form-control form-control-sm ml-3 w-50" type="text" placeholder="Search" aria-label="Search">
+    <div id="Center">
+        <form>
+            <label for="Description" id="Title">List Ingredients</label>
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="First Ingredient">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Second Ingredient">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Third Ingredient">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Fourth ">
+                </div>
+            </div>
         </form>
+        <div class="form-group">
+            <label for="Description" id="Title">Add a Description</label>
+            <textarea class="form-control" id="placeHolder" rows=""
+                placeholder="Write a Simple Description about the Recipe."></textarea>
+        </div>
     </div>
 
-
+    <footer class="footer">
+        Sunny Side Cooking 2020
 
 </body>
 

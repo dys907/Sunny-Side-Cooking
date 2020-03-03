@@ -1,9 +1,22 @@
-#mainhead {
-    position: relative;
+#Center {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: large;
+}
+
+#placeHolder {
     text-align: center;
 }
 
-#searchbar {
-    position: absolute;
-    top: 50%;
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color:white;
+    text-align:center;
 }

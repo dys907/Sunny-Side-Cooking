@@ -1,0 +1,9 @@
+#mainhead {
+    position: relative;
+    text-align: center;
+}
+
+#searchbar {
+    position: absolute;
+    top: 50%;
+}

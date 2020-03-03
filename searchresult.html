@@ -19,7 +19,7 @@
     <!------------------------>
     <!-- Your own CSS files -->
     <!------------------------>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="style/searchresult.css">
 
     <style>
  
@@ -30,19 +30,35 @@
     <!------------------->
     <!--  HTML Section -->
     <!------------------->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="index.html" class="navbar-brand">Sunny Side Cooking</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-                <a href="review.html" class="nav-item nav-link">Home</a>
-                <a href="review2.html" class="nav-item nav-link">Rate</a>
-                <a href="review3.html" class="nav-item nav-link">Review</a>
-                <a href="review4.html" class="nav-item nav-link">Improve</a>
-                <a href="review5.html" class="nav-item nav-link">Photo</a>
-                <a href="review6.html" class="nav-item nav-link active">Finish</a>
+                <a href="upload-page.html" class="nav-item nav-link">Upload</a>
+                <a href="#" class="nav-item nav-link">Favourites</a>
             </div>
-
+            <div class="md-form mt-0">
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+              </div>
+            <div class="navbar-nav ml-auto">
+                <a href="#" class="nav-item nav-link">Login</a>
+            </div>
         </div>
     </nav>
+    <div class="card">
+        <img class="card-img-top picResize" src="./images/ChickenBroccoli.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">
+            Quick recipe for brocooli and chicken stirfry.
+          </p>
+          <a href="#!" class="btn btn-primary">Choose Recipe</a>
+        </div>
+      </div>
     
 
     <!----------------------------------------------->

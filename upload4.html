@@ -37,39 +37,53 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
                 <a href="upload1.html" class="nav-item nav-link">Title</a>
-                <a href="upload2.html" class="nav-item nav-link active">Ingredients</a>
+                <a href="upload2.html" class="nav-item nav-link">Ingredients</a>
                 <a href="upload3.html" class="nav-item nav-link">Photo</a>
-                <a href="upload4.html" class="nav-item nav-link">Submit</a>
+                <a href="upload4.html" class="nav-item nav-link active">Submit</a>
             </div>
         </div>
     </nav>
 
     <div id="Center">
         <form>
-            <label for="Description" id="Title">List Ingredients</label>
+            <div class="form-group">
+                <label for="Title" id="Title">Title</label>
+                <input type="Title" class="form-control" id="placeHolder" aria-describedby="emailHelp"
+                    placeholder="Chicken and Broccoli Stir Fry">
+        </form>
+    </div>
+    <div class="form-group">
+        <label for="Instructions" id="Title">Cooking Instructions</label>
+        <textarea class="form-control" id="placeHolder" rows="4" placeholder="1.Cut Chicken 
+  2. Cut Broccoli 
+  3.Add to Wok with Soy sauce
+  4. Cook on high for 8 minutes and serve"></textarea>
+
+        <form>
+            <label for="Description" id="Title">Ingredient List</label>
             <div class="row">
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="First Ingredient">
+                    <input type="text" class="form-control" placeholder="Broccoli">
                 </div>
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="Second Ingredient">
+                    <input type="text" class="form-control" placeholder="Chicken">
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="Third Ingredient">
+                    <input type="text" class="form-control" placeholder="Soy Sauce">
                 </div>
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="Fourth ">
+                    <input type="text" class="form-control" placeholder="Pepper">
                 </div>
             </div>
         </form>
         <div class="form-group">
-            <label for="Description" id="Title">Add a Description</label>
-            <textarea class="form-control" id="placeHolder" rows=""
-                placeholder="Write a Simple Description about the Recipe."></textarea>
+            <label for="Description" id="Title">Description</label>
+            <textarea class="form-control" id="placeHolder" rows="" placeholder="'Recipe Description'"></textarea>
         </div>
-        <br><br><a class="btn btn-primary" href="upload3.html" role="button">Next</a>
+
+        <a class="btn btn-primary" href="upload5.html" role="button">Submit</a>
     </div>
 
     <footer class="footer">
@@ -78,4 +92,3 @@
 </body>
 
 </html>
-

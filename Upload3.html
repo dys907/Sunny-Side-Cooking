@@ -22,28 +22,40 @@
     <!------------------------>
     <!-- Your own CSS files -->
     <!------------------------>
-    <link rel="stylesheet" type="text/css" href="upload.css">
+    <link rel="stylesheet" type="text/css" href="style/upload.css">
 </head>
 
 <body>
 
     <!--NAV BAR-->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
-        <a href="#" class="navbar-brand">Home</a>
+        <a href="index.html" class="navbar-brand">Home</a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-                <a href="Upload1.html" class="nav-item nav-link">Title</a>
+                <a href="upload1.html" class="nav-item nav-link">Title</a>
                 <a href="upload2.html" class="nav-item nav-link">Ingredients</a>
-                <a href="Upload3.html" class="nav-item nav-link active">Submit</a>
+                <a href="upload3.html" class="nav-item nav-link active">Photo</a>
+                <a href="upload4.html" class="nav-item nav-link">Submit</a>
             </div>
         </div>
     </nav>
 
-    <h1 id="mainhead" style="font-size: 72;">Name Your Recipe</h1>
+    <div id="Center">
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlFile1">Upload a Photo of your Finished Dish</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+        </form>
+        <br><br><a class="btn btn-primary" href="upload4.html" role="button">Next</a>
+    </div>
+
+    <footer class="footer">
+        Sunny Side Cooking 2020
 
 </body>
 

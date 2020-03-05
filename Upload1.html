@@ -29,45 +29,35 @@
 
     <!--NAV BAR-->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
-        <a href="#" class="navbar-brand">Home</a>
+        <a href="index.html" class="navbar-brand">Home</a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-                <a href="Upload1.html" class="nav-item nav-link active">Title</a>
+                <a href="upload1.html" class="nav-item nav-link active">Title</a>
                 <a href="upload2.html" class="nav-item nav-link">Ingredients</a>
-                <a href="Upload3.html" class="nav-item nav-link">Submit</a>
+                <a href="upload3.html" class="nav-item nav-link">Photo</a>
+                <a href="upload4.html" class="nav-item nav-link">Submit</a>
+
             </div>
         </div>
     </nav>
 
     <div id="Center">
         <form>
-            <label for="Description" id="Title">List Ingredients</label>
-            <div class="row">
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="First Ingredient">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Second Ingredient">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Third Ingredient">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Fourth ">
-                </div>
-            </div>
+            <div class="form-group">
+                <label for="Title" id="Title">Add a Title</label>
+                <input type="Title" class="form-control" id="placeHolder" aria-describedby="emailHelp"
+                    placeholder="Title">
         </form>
         <div class="form-group">
-            <label for="Description" id="Title">Add a Description</label>
-            <textarea class="form-control" id="placeHolder" rows=""
-                placeholder="Write a Simple Description about the Recipe."></textarea>
+            <label for="Instructions" id="Title">Cooking Instructions</label>
+            <textarea class="form-control" id="placeHolder" rows="10"
+                placeholder="Write Step by Step Instructions."></textarea>
         </div>
+        <br><br><a class="btn btn-primary" href="upload2.html" role="button">Next</a>
     </div>
 
     <footer class="footer">

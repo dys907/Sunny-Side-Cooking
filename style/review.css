@@ -6,11 +6,12 @@
     width: 30%;
 }
 #recipePicture {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10vw;
-    padding-top: 2vh;
+    width: 320px;
+    height:160px;
+
+}
+#upload {
+
 }
 /*#level {
     position:absolute;
@@ -21,12 +22,7 @@
     text-align:center;
 }
 */
-.img{
-    float: left;
-    width: 200px;
-    height: 150px;
-    background-size: cover;
-}
+
 .center {
     text-align: center;
 }

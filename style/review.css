@@ -1,16 +1,23 @@
 #mainMenu {
     position: absolute;
     left: 35vw;
-    bottom: 4vw;
+    bottom: 4vh;
     text-align:center;
     width: 30%;
 }
+
+
 #recipePicture {
     width: 320px;
     height:160px;
 
 }
-#upload {
+.pagePos {
+    position: absolute;
+    left: 35vw;
+    bottom: 10vh;
+    text-align:center;
+    width: 30%;
 
 }
 /*#level {

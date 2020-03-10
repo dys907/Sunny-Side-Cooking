@@ -1,6 +1,7 @@
-div.chicken {
-    text-align: center;
-    width: 100%;
+#chicken {
+    
+    width:40vh;
+    
     
     object-fit: cover;
 

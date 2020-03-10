@@ -52,10 +52,10 @@
 }
 .bottomCenter {
     position: absolute;
-    left: 43vw;
+    left: 39vw;
     bottom: 5vh;
     margin-bottom: 40;
-    width: 14vw;
+    width: 22vw;
     color:white;
     text-align:center;
 }

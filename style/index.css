@@ -17,3 +17,11 @@
     position: absolute;
     height: 40%;
   }
+
+.containter {
+    text-align: center;
+}
+
+.containter-fluid{
+    text-align: center;
+}

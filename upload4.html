@@ -44,7 +44,7 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div id="smallGap" class="container">
         <form>
             <div class="form-group">
                 <label for="Title" id="Title">Title</label>
@@ -54,13 +54,10 @@
     </div>
     <div class="form-group">
         <label for="Instructions" id="Title">Cooking Instructions</label>
-        <textarea class="form-control" id="placeHolder" rows="4" placeholder="1.Cut Chicken 
-  2. Cut Broccoli 
-  3.Add to Wok with Soy sauce
-  4. Cook on high for 8 minutes and serve"></textarea>
-
+        <textarea class="form-control" id="placeHolder" rows="4" placeholder="'Cooking Instructions'"></textarea>
+        
         <form>
-            <label for="Description" id="Title">Ingredient List</label>
+            <div id="smallGap" ><label for="Description" id="Title">Ingredient List</label></div>
             <div class="row">
                 <div class="col">
                     <input type="text" class="form-control" placeholder="Broccoli">
@@ -69,7 +66,7 @@
                     <input type="text" class="form-control" placeholder="Chicken">
                 </div>
             </div>
-            <div class="row">
+            <div id="smallGap" class="row">
                 <div class="col">
                     <input type="text" class="form-control" placeholder="Soy Sauce">
                 </div>
@@ -78,17 +75,26 @@
                 </div>
             </div>
         </form>
-        <div class="form-group">
+        <div id="smallGap" class="form-group">
             <label for="Description" id="Title">Description</label>
-            <textarea class="form-control" id="placeHolder" rows="" placeholder="'Recipe Description'"></textarea>
+            <textarea class="form-control" id="placeHolder" rows="3" placeholder="'Recipe Description'"></textarea>
         </div>
 
         <div id="posSubmit">
-            <div>
-                <a class="btn btn-primary" href="upload3.html" role="button">Back</a>
-                <a class="btn btn-primary" href="upload5.html" role="button">Submit</a>
-            </div>
-        </div> <br>
+            <nav aria-label="Page navigation example">
+                <ul id="posPagination" class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="upload1.html" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="upload1.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="upload2.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="upload3.html">3</a></li>
+                    <li class="page-item disabled"><a class="page-link" href="upload4.html">4</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="upload5.html">Next</a>
+                    </li>
+                </ul>
+            </nav>
 
     <div class = "footer fixed-bottom center " >
         Sunny Side Cooking 2020

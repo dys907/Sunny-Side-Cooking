@@ -1,15 +1,11 @@
 #chicken {
     
     width:40vh;
-    
-    
+
     object-fit: cover;
 
 }
 
-div.card-img-bottom {
-    width: 50%;
-}
 .footer {
     position: fixed;
     left: 0;

@@ -91,3 +91,16 @@ label {
     color:white;
     text-align:center;
 }
+
+.center {
+    text-align:center;
+}
+
+.pagePos {
+    position: absolute;
+    bottom:5vh;
+    width: 100%;
+    text-align:center;
+    
+
+}

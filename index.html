@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
-    <title>home</title>
+    <title>Welcome to Sunny Side Cooking</title>
     <meta name="comp1800 boilerplate code" content="my bcit project">
     <meta name="author" content="BCIT">
 
@@ -11,152 +10,39 @@
     <!--  Meta tag for rendering on mobile devices -->
     <!----------------------------------------------->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
     <!----------------------------------------------->
     <!-- CSS: Bootstrap, Firebase, other API -->
     <!----------------------------------------------->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
-
+   
     <!------------------------>
     <!-- Your own CSS files -->
     <!------------------------>
-    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/landing.css">
 
 </head>
-
 <body>
-    <!------------------->
+    <!----------------------->
     <!--  HTML Section -->
-    <!------------------->
-
+    <!----------------------->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a href="index.html" class="navbar-brand">Sunny Side Cooking</a>
+        <a href="#" class="navbar-brand">Sunny Side Cooking</a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav">
-                <a href="upload1.html" class="nav-item nav-link">Upload</a>
-                <a href="#" class="nav-item nav-link">Favourites</a>
-            </div>
-            <div class="navbar-nav ml-auto">
-                <a href="landing.html" class="nav-item nav-link">Login</a>
-            </div>
-        </div>
     </nav>
 
-    <div class="jumbotron jumbotron-fluid">
+    <h2 class = "center my-2">Do you have an account with us?</h2>
 
-        <div class="container">
-            <div class="row">
-                <div class="text-center">
-                <div class="col">
-                    <h1 class="display-4">Sunny Side Cooking</h1>
-                    <p class="lead ">SLOGAN FOR COOKING HERE.</p>
-                </div>
-                  </div>
-                  <div class="col">
-                    <img class= "d-block mx-auto" id = "logo" src="images/logo.jpg">
-                  </div>
-               
-                </div>
-<br>
-        </div>
- <!-- Search form -->
- <div class="container">
-     <h1>Search for ingredients!</h1>
-     <div class="row"></div>
-    <input class="form-control" id="anythingSearch" type="text" href="searchresult.html" placeholder="Type something to search list items">
-    <div id="myDIV">
-        <br>
-        <div>
-            <a href="searchresult.html" class="btn btn-info text-center ">Search</a>
-        </div>
-    </div>
-</div> 
-<br>    
-        <div class="container ">
-            <h3 class="text-center">Top picks of the Week!</h2>
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <!-- WILL BE USERS DISHES -->
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="images/slide1.png"
-                            data-src="holder.js/900x300?auto=yes&bg=777&fg=555&text=First slide" alt="First slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Chicken and Broccoli</h3>
-                            <p>by Franis</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="images/slide2.jpg"
-                            data-src="holder.js/900x300?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Chicken and Broccoli (better)</h3>
-                            <p>by Dylon</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="images/slide2.jpg"
-                            data-src="holder.js/900x300?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Chicken and Broccoli (same as prev)</h3>
-                            <p>by jermy</p>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-    
-    
-        </div>
-    
-    </div>
+    <img src="./images/SmallerLogo.jpg" class="rounded mx-auto d-block img-fluid my-3" alt="SunnySide">
 
-    
+    <a href="login.html" class="btn btn-primary btn-lg btn-block my-4 " role="button">Existing User</a>
+    <a href="login.html" class="btn btn-secondary btn-block btn-lg " role="button">New User</a>
 
 
-
-
-
-
-    <div class="container-fluid">
-
-
-    </div>
-
-   
-
-    <div class="container-fluid">
-        <!-- A fluid container that uses the full witdh -->
-        <div class="row">
-            <div class="col">
-                <h3>What is Sunny Side Cooking</h1>
-                    <p>Brief description of sunnyside</p>
-                    <br>
-            </div>
-
-
-        </div>
-    </div>
-    
-    <div class = "footer fixed-bottom center " >
+      <div class = "footer fixed-bottom center " >
         Sunny Side Cooking 2020
     </div>
     <!----------------------------------------------->
@@ -183,4 +69,4 @@
 
 
 </body>
-</html>        
+</html>                          

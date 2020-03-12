@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Welcome to Sunny Side Cooking</title>
+    <title>Uploaded RecipeRecipe</title>
     <meta name="comp1800 boilerplate code" content="my bcit project">
     <meta name="author" content="BCIT">
 
@@ -20,41 +20,97 @@
     <!------------------------>
     <!-- Your own CSS files -->
     <!------------------------>
-    <link rel="stylesheet" href="style/landing.css">
+    <link rel="stylesheet" href="style/recipe.css">
 
 </head>
 <body>
-    <!----------------------->
+    <!------------------->
     <!--  HTML Section -->
-    <!----------------------->
+    <!------------------->
+
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a href="index.html" class="navbar-brand">Sunny Side Cooking</a>
+        <a href="main.html" class="navbar-brand">Sunny Side Cooking</a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-                <a href="upload1.html" class="nav-item nav-link">Upload</a>
+                <a href="upload-page.html" class="nav-item nav-link">Upload</a>
                 <a href="#" class="nav-item nav-link">Favourites</a>
             </div>
+            <div class="md-form mt-0">
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            </div>
             <div class="navbar-nav ml-auto">
-                <a href="landing.html" class="nav-item nav-link">Login</a>
+                <a href="account.html" class="nav-item nav-link">My Account</a>
             </div>
         </div>
     </nav>
+    <div class="container">
+        <h1>Chicken Broccoli</h1>
+        <br>
 
-    <h2 class = "center my-2">Do you have an account with us?</h2>
-
-    <img src="./images/SmallerLogo.jpg" class="rounded mx-auto d-block img-fluid my-3" alt="SunnySide">
-
-    <a href="login.html" class="btn btn-primary btn-lg btn-block my-4 " role="button">Existing User</a>
-    <a href="login.html" class="btn btn-secondary btn-block btn-lg " role="button">New User</a>
+        <div class="row">
+            <div class="col">
+                <div><img id="chicken" src="images/ChickenBroccoli.jpg">
 
 
-      <div class = "footer fixed-bottom center " >
+                </div>
+            </div>
+            <div class="col">
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>List</li>
+                    <li>Will</li>
+                    <li>Go</li>
+                    <li>Here</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Estimated Time</h3>
+                <p>Prep Time: xx minutes </p>
+                <p>Cook Time: xx minutes</p>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="container">
+        <div class="content" id="Directions">
+            <h2>Directions</h2>
+            <ol>  
+                <li>List</li>
+                <li>Will</li>
+                <li>Go</li>
+                <li>Here</li>
+            </ol>
+
+        </div>
+
+        <!--Row with two equal columns-->
+
+
+        <div class="col py-8">
+            <a href="main.html" class="btn btn-primary">Complete</a>
+            <a href="upload1.html" class="btn btn-secondary">Edit</a>
+            <!--pretty janky way of fixing the spacing for the footer-->
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <div class="footer fixed-bottom center ">
         Sunny Side Cooking 2020
     </div>
+
+
     <!----------------------------------------------->
     <!-- JS: Boostrap, Firebase, API related    -->
     <!----------------------------------------------->
@@ -79,4 +135,4 @@
 
 
 </body>
-</html>                          
+</html>        

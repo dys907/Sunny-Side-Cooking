@@ -55,7 +55,7 @@
                 <div class="text-center">
                 <div class="col">
                     <h1 class="display-4">Sunny Side Cooking</h1>
-                    <p class="lead ">SLOGAN FOR COOKING HERE.</p>
+                    <p id = "loginwelcome" class="lead ">SLOGAN FOR COOKING HERE.</p>
                 </div>
                   </div>
                   <div class="col">
@@ -180,7 +180,12 @@
      <!--------------------------------------------------------------------->
     <!-- Make calls to your own JavaScript functions, here below-->
     <!---------------------------------------------------------------------->
-
+    <script>
+         firebase.auth().onAuthStateChanged(function(user){
+    console.log(user.displayName);
+    document.getElementById("loginwelcome").innerHTML = "Hey, " + user.displayName + ", let's cook!";
+})
+    </script>
 
 </body>
 </html>        

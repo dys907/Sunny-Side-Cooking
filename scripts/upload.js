@@ -1,3 +1,4 @@
+
 document.getElementById("submit").onclick = processForm;
 function processForm(e) {
     e.preventDefault();
@@ -32,8 +33,8 @@ document.querySelector("#ing3").value = localStorage.getItem("ing3");
 document.querySelector("#ing4").value = localStorage.getItem("ing4");
 document.querySelector("#instruction").value = localStorage.getItem("instruction");
 document.querySelector("#description").value = localStorage.getItem("description");
-document.querySelector("#prep").value = localStorage.getItem("preptime");
-document.querySelector("#cook").value = localStorage.getItem("cooktime");
+document.querySelector("#preptime").value = localStorage.getItem("preptime");
+document.querySelector("#cooktime").value = localStorage.getItem("cooktime");
 
 }
 

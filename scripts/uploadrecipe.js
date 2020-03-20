@@ -13,25 +13,13 @@ function processForm(e) {
     e.preventDefault();
     
 firebase.auth().onAuthStateChanged(function (user) {
-    user = db.collection("users/").doc(user.uid);
-    user.onSnapshot(function (d) {
-        if (d.get("experience") != null) {
-            let newExp = 10 + d.data()["experience"];
-            user.update({
-                experience: newExp
-            })
-        } else {
-            user.set({
-                experience: 3
-             }, {merge: true});
-            
+    let increment = firebase.firestore.FieldValue.increment(10);
+    let dbref = db.collection("users/").doc(user.uid);
 
-        }
-
-    });
+    dbref.update({
+        experience: increment
+    })
 })
-
-
 
     db.collection("Recipe").add({
         title: localStorage.getItem("title"),

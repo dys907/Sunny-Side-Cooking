@@ -33,35 +33,133 @@
 
 
   <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
-    <a href="#" class="navbar-brand">Sunny Side Cooking</a>
+    <a href="main.html" class="navbar-brand">Sunny Side Cooking</a>
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ml-auto">
-            <a href="account.html" class="nav-item nav-link">My Account</a>
-        </div>
+      <div class="navbar-nav ml-auto">
+        <a href="account.html" class="nav-item nav-link">My Account</a>
+      </div>
     </div>
-</nav>
+  </nav>
 
+  <div class="container">
+    <div class="center my-3">
+      <h2>Recipe Complete! Review and Get Bonus XP!</h2>
+    </div>
 
-  <div class="center my-2">
-    <h2>Recipe Complete!</h2>
+    <div id="recipeName" class="center my-4">
+      <h4>Stirfry Chicken and Broccoli</h4>
+    </div>
+
+    <div><img id="recipePicture" class="img-fluid d-block mx-auto" src="./images/ChickenBroccoli2.jpg"></div>
+    <div id="favourite" class="center my-3">Save to Favorites</div>
+
+    <div class="center my-5" id="level">LEVEL</div>
+
+    <h2 class="center">Rate the Dish!</h2>
+
+    <div class="center">
+      <h4>Taste</h4>
+    </div>
+    <div class="container">
+      <div class="d-flex">
+        <div class="mr-auto p-2">Bad</div>
+        <div class="p-2">Good</div>
+      </div>
+      <input type="range" class="custom-range" min="0" max="4" id="Taste">
+      <div class="center">
+        <h4>Effort</h4>
+      </div>
+      <div class="d-flex">
+        <div class="mr-auto p-2">Little</div>
+        <div class="p-2">Lots</div>
+      </div>
+      <input type="range" class="custom-range" min="0" max="4" id="customRange2">
+      <div class="center">
+        <h4>Difficulty</h4>
+      </div>
+      <div class="d-flex">
+        <div class="mr-auto p-2">Easy</div>
+        <div class="p-2">Hard</div>
+      </div>
+      <input type="range" class="custom-range" min="0" max="4" id="customRange2">
+    </div>
+
+    <h2 class="center my-2"> Would You Like To Leave A Public Review?</h2>
+
+    <form class="container">
+
+      <div class="form-group">
+        <h4>Add a headline</h4>
+        <input type="text" class="form-control" id="inputHeader" aria-describedby="emailHelp"
+          placeholder="What's most important to know?">
+      </div>
+
+      <div class="form-group">
+        <h4>Write your review</h4>
+        <textarea class="form-control" id="reviewInput" rows="5"
+          placeholder="What did you like or dislike about the food or recipe?"></textarea>
+      </div>
+    </form>
+
+    <div>
+      <h2 class="center">Recipe Improvements</h2>
+    </div>
+    <br>
+
+    <div class="container">
+      <h4>Ingredient substitution</h4>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Ingredient</option>
+              <option>Chicken</option>
+              <option>Broccoli</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <input class="form-control" type="text" placeholder="Replacement">
+        </div>
+      </div>
+      <div class="row my-2">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Ingredient</option>
+              <option>Chicken</option>
+              <option>Broccoli</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <input class="form-control" type="text" placeholder="Replacement">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h4>Suggestions</h4>
+      <textarea class="form-control" id="reviewInput" rows="3"
+        placeholder="Make suggestions towards the recipe. These will only be seen by the author."></textarea>
+
+      <div class="center">
+        <h2>Take a Photo of <br>Your Dish!</h2>
+      </div>
+      <div><img class="img-fluid d-block mx-auto" src="./images/camera2.png"></div>
+
+      <div class="center"> Top voted pictures get featured on the<br>recipe and get bonus xp!</div>
+    </div>
+    <div class=container>
+      <input type="submit" id="submit" class="btn btn-primary btn-block my-5">
+    </div>
   </div>
 
-  <div id="recipeName" class="center my-3">
-    <h4>Stirfry Chicken and Broccoli</h4>
-  </div>
 
-  <div><img id="recipePicture" class="img-fluid d-block mx-auto" src="./images/ChickenBroccoli2.jpg"></div>
-  <div id="favourite" class="center">Save to Favorites</div>
-  <br class="my-3">
-  <div class="center" id="level">LEVELING PLACEHOLDER</div>
-
-
-  <hr>
-
+<!-- 
   <nav aria-label="...">
     <ul class="pagination justify-content-center pagePos">
       <li class="page-item disabled">
@@ -79,7 +177,7 @@
     </ul>
   </nav>
 
-  <a id="mainMenu" class="btn btn-link" href="main.html" role="button">Main Menu</a>
+  <a id="mainMenu" class="btn btn-link" href="main.html" role="button">Main Menu</a> -->
 
 
 

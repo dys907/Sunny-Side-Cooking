@@ -21,7 +21,7 @@ firebase.auth().onAuthStateChanged(function (user) {
     })
 })
 
-    db.collection("Recipe").add({
+    db.collection("recipe").add({
         title: localStorage.getItem("title"),
         ingredients: [localStorage.getItem("ing1"),
         localStorage.getItem("ing2"),

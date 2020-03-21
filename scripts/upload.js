@@ -1,4 +1,3 @@
-
 document.getElementById("submit").onclick = processForm;
 function processForm(e) {
     e.preventDefault();

@@ -30,77 +30,163 @@
     <!------------------->
     <!--  HTML Section -->
     <!------------------->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <a href="main.html" class="navbar-brand">Sunny Side Cooking</a>
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav">
-              <a href="upload1.html" class="nav-item nav-link">Upload</a>
-              <a href="#" class="nav-item nav-link">Favourites</a>
-          </div>
-          <div class="md-form mt-0">
-            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-          </div>            <div class="navbar-nav ml-auto">
-          <div class="navbar-nav ml-auto">
-              <a href="account.html" class="nav-item nav-link">My Account</a>
-          </div>
+    
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+      <div class ="container-fluid">
+         
+              <a href="main.html" class="navbar-brand"><img src="images/logo_navbar.png"></a>
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <ul class="navbar-nav">
+                      <a href="upload1.html" class="nav-item nav-link">Upload</a>
+                      <a href="#" class="nav-item nav-link">Favourites</a>
+                  </ul>
+                  <ul class="navbar-nav ml-auto">
+                      <a href="account.html" class="nav-item nav-link">My Account</a>
+                  </ul>
+              </div>
+         
       </div>
   </nav>
+  <!-- SEARCH RESULT -->
+  <div class="col-xs 12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+    <h1>user-text-input</h1>  
+</div>
 
 
-
-
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="card-deck mt-0">
-            <div class="card-body">
-              <img class="card-img-top img-fluid" src="./images/ChickenBroccoli.jpg" alt="Card image cap">
-              <h5 class="card-title">Broccoli and Chicken</h5>
-              <p class="card-text">Quick recipe for broccoli and chicken stirfry.</p>
-              <a href="recipe.html" class="btn btn-primary">See recipe</a>
-            </div>
+<div class="jumbotron-fluid">
+  <div class="container-fluid padding">
+   <div class="row padding">
+     
+      <div class="col-md-3">
+          <div class="card">
+              <img class ="card-img-top" src="images/ChickenBroccoli.jpg">
+              <div class="card-body">
+                  <h4 class="card-title">Chicken and Broccoli</h4>
+                  <p class= "card-text">Hearty Chicken with fresh broc straight from the farm!</p>
+                  <a href="recipe.html" class="btn btn-outline-secondary">View Recipe</a>
+              </div>
           </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card-deck mt-0">
-            <div class="card-body">
-              <img class="card-img-top picResize" src="./images/ChickenBroccoli.jpg" alt="Card image cap">
-              <h5 class="card-title">Broccoli and Chicken</h5>
-              <p class="card-text">Quick recipe for broccoli and chicken stirfry.</p>
-              <a href="recipe.html" class="btn btn-primary">See recipe</a>
-            </div>
-          </div>
-        </div>
       </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="card-deck mt-0">
-            <div class="card-body">
-              <img class="card-img-top picResize" src="./images/ChickenBroccoli.jpg" alt="Card image cap">
-              <h5 class="card-title">Broccoli and Chicken</h5>
-              <p class="card-text">Quick recipe for broccoli and chicken stirfry.</p>
-              <a href="recipe.html" class="btn btn-primary">See recipe</a>
-            </div>
+      <div class="col-md-3">
+          <div class="card">
+              <img class ="card-img-top" src="images/slide2.jpg">
+              <div class="card-body">
+                  <h4 class="card-title">Recipe Name</h4>
+                  <p class= "card-text">Brief description of dish</p>
+                  <a href="#" class="btn btn-outline-secondary">View Recipe</a>
+              </div>
           </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card-deck mt-0">
-            <div class="card-body">
-              <img class="card-img-top picResize" src="./images/ChickenBroccoli.jpg" alt="Card image cap">
-              <h5 class="card-title">Broccoli and Chicken</h5>
-              <p class="card-text">Quick recipe for broccoli and chicken stirfry.</p>
-              <a href="recipe.html" class="btn btn-primary">See recipe</a>
-            </div>
+      </div>
+      <div class="col-md-3">
+          <div class="card">
+              <img class ="card-img-top" src="images/slide1.png">
+              <div class="card-body">
+                  <h4 class="card-title">Recipe Name</h4>
+                  <p class= "card-text">Brief description of dish</p>
+                  <a href="#" class="btn btn-outline-secondary">View Recipe</a>
+              </div>
           </div>
-    <br>
-
-      <div class = "footer fixed-bottom center " >
-        Sunny Side Cooking 2020
-    </div>
+      </div>
+      <div class="col-md-3">
+          <div class="card">
+              <img class ="card-img-top" src="images/slide1.png">
+              <div class="card-body">
+                  <h4 class="card-title">Recipe Name</h4>
+                  <p class= "card-text">Brief description of dish</p>
+                  <a href="#" class="btn btn-outline-secondary">View Recipe</a>
+              </div>
+          </div>
+      </div>
+      
+  
+   </div>   
+   <div class="row padding">
+      <div class="col-md-3">
+          <div class="card">
+              <img class ="card-img-top" src="images/slide1.png">
+              <div class="card-body">
+                  <h4 class="card-title">Recipe Name</h4>
+                  <p class= "card-text">Brief description of dish</p>
+                  <a href="#" class="btn btn-outline-secondary">View Recipe</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="card">
+              <img class ="card-img-top" src="images/slide2.jpg">
+              <div class="card-body">
+                  <h4 class="card-title">Recipe Name</h4>
+                  <p class= "card-text">Brief description of dish</p>
+                  <a href="#" class="btn btn-outline-secondary">View Recipe</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="card">
+              <img class ="card-img-top" src="images/slide1.png">
+              <div class="card-body">
+                  <h4 class="card-title">Recipe Name</h4>
+                  <p class= "card-text">Brief description of dish</p>
+                  <a href="#" class="btn btn-outline-secondary">View Recipe</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="card">
+              <img class ="card-img-top" src="images/slide1.png">
+              <div class="card-body">
+                  <h4 class="card-title">Recipe Name</h4>
+                  <p class= "card-text">Brief description of dish</p>
+                  <a href="#" class="btn btn-outline-secondary">View Recipe</a>
+              </div>
+          </div>
+      </div>
+      
+  
+   </div>  
+  </div>
+  </div>
+          <!--------  Footer       ------>
+          <footer>
+            <div class = "container-fluid padding" >
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <img src="images/logo_navbar.png">
+                        <hr class="light">
+                        <p>Email probably</p>
+                        <p>Contact number</p>
+                   
+                        
+                   
+                    </div>
+                    <div class="col-md-4">
+                        <hr class="light">
+                        <h4>Connect</h4>
+                        <hr class="light">
+                        <p>Instagram</p>
+                        <p>Facebook</p>
+                        
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <hr class="light">
+                        <h4>About us</h4>
+                        <hr class="light">
+                        <p>We are Term 1 students from BCIT making our first project in our COMP 1800 class</p>
+                        <p>Made by Dylan, Francis, and Jeremy</p>
+                        
+                    </div>
+                    
+                </div>
+                
+               
+            </div>
+        </footer>
     <!----------------------------------------------->
     <!-- JS files: jQuery first, then Bootstrap JS -->
     <!----------------------------------------------->

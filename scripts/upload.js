@@ -1,3 +1,48 @@
+function addIngredientTODOM() {
+    const ingredientsList = document.getElementById("ingredient-area");
+    const br = document.createElement("br");
+    
+    const formrow = document.createElement("div");
+    formrow.className += ("form-row");
+    const colsm = document.createElement("div");
+    colsm.className += ("form-group col-sm-6");
+    const ingredient = document.createElement("input");
+    ingredient.className += ("form-control");
+
+    const colsmA = document.createElement("div");
+    colsmA.className += ("form-group col-sm-6");
+    const amount = document.createElement("input");
+    colsmA.className += ("form-control");
+    amount.className += ("form-control");
+
+    ingredient.setAttribute("type", "text");
+    ingredient.setAttribute("placeholder", "Ingredient");
+    amount.setAttribute("type", "text");
+    amount.setAttribute("placeholder", "amount");
+
+    colsmA.appendChild(amount);
+    colsm.appendChild(ingredient);
+    formrow.appendChild(ingredient);
+    formrow.appendChild(amount);
+
+    ingredientsList.appendChild(formrow);
+    ingredientsList.appendChild(br);
+
+}
+
+/*
+function addIngredientTODOM2() {
+    <div class="form-row">
+    <div class="form-group col-sm-6">
+      <input type="text" class="form-control" id="ing1" placeholder="1">
+    </div>
+    <div class="form-group col-sm-6">
+      <input type="text" class="form-control" id="ing2" placeholder="2">
+    </div>
+  </div>
+}
+*/
+
 document.getElementById("submit").onclick = processForm;
 function processForm(e) {
     e.preventDefault();

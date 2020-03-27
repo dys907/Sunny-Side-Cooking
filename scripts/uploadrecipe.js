@@ -31,6 +31,11 @@ firebase.auth().onAuthStateChanged(function (user) {
         description: localStorage.getItem("description"),
         preptime: localStorage.getItem("preptime"),
         cooktime: localStorage.getItem("cooktime")
+    }).then(function() {
+        console.log("Document successfully written!");
+    })
+    .catch(function(error) {
+        console.error("Error writing document: ", error);
     })
     .then(function() {
         localStorage.clear();

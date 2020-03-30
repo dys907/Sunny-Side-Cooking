@@ -1,35 +1,56 @@
-function addIngredientTODOM() {
-    const ingredientsList = document.getElementById("ingredient-area");
-    const br = document.createElement("br");
-    
-    const formrow = document.createElement("div");
-    formrow.className += ("form-row");
-    const colsm = document.createElement("div");
-    colsm.className += ("form-group col-sm-6");
-    const ingredient = document.createElement("input");
-    ingredient.className += ("form-control");
+// //holds all the ingredients
+//  let ing1 = document.getElementById("ing1");
+//  let am1 = document.getElementById("am1");
+//  let ingArray = [ing1];
+//  let amountArray = [am1];
 
-    const colsmA = document.createElement("div");
-    colsmA.className += ("form-group col-sm-6");
-    const amount = document.createElement("input");
-    colsmA.className += ("form-control");
-    amount.className += ("form-control");
+// //making more ingredient fields
+// let ingCounter = 1;
+// function ingAdd() {
+//     for (let i = 0; i< ingArray.size; i++) {
+//       if (ingArray[i].value.length == 0 && amountArray[i].value.length == 0) {
+//         break;
+//       } 
+//       addIngredientTODOM();
+//       ingCounter++;
 
-    ingredient.setAttribute("type", "text");
-    ingredient.setAttribute("placeholder", "Ingredient");
-    amount.setAttribute("type", "text");
-    amount.setAttribute("placeholder", "amount");
+//     }
 
-    colsmA.appendChild(amount);
-    colsm.appendChild(ingredient);
-    formrow.appendChild(ingredient);
-    formrow.appendChild(amount);
+// }
+// function addIngredientTODOM() {
+//     //access the div tag holding all ingredients
+//     let ingredientsList = document.getElementById("ingredient-area");
+//     //1stlayer
+//     let formrow = document.createElement("div");
+//     formrow.className += ("form-row");
+//     //2ndlayer ing
+//     let colsm = document.createElement("div");
+//     colsm.className += ("form-group col-sm-9");
+//     //3rdlayer
+//     let ingredient = document.createElement("input");
+//     ingredient.className += ("form-control");
+//     //2ndlayer amount
+//     let colsmA = document.createElement("div");
+//     colsmA.className += ("form-group col-sm-3");
+//     //3rdlayer 
+//     let amount = document.createElement("input");
+//     amount.className += ("form-control");
 
-    ingredientsList.appendChild(formrow);
-    ingredientsList.appendChild(br);
+//     ingredient.setAttribute("type", "text");
+//     ingredient.setAttribute("placeholder", "Ingredient");
+//     amount.setAttribute("type", "text");
+//     amount.setAttribute("placeholder", "amount");
+//     //appends everything together
+//     colsm.appendChild(ingredient);
+//     colsmA.appendChild(amount);
 
-}
+//     formrow.appendChild(colsm);
+//     formrow.appendChild(colsmA);
 
+//     ingredientsList.appendChild(formrow);
+
+// }
+//NOT MVP---------------------------------------------------------------------------
 /*
 function addIngredientTODOM2() {
     <div class="form-row">
@@ -43,19 +64,22 @@ function addIngredientTODOM2() {
 }
 */
 
+
 document.getElementById("submit").onclick = processForm;
 function processForm(e) {
     e.preventDefault();
     let title = document.getElementById("uploadTitle").value;
-
+    //NEED THIS PART DYNAMICALLY---------------------------------------
     let ing1 = document.getElementById("ing1").value;
     let ing2 = document.getElementById("ing2").value;
     let ing3 = document.getElementById("ing3").value;
     let ing4 = document.getElementById("ing4").value;
+    //NEED THIS PART DYNAMICALLY---------------------------------------
     let instruction = document.getElementById("instruction").value;
     let description = document.getElementById("description").value;
     let preptime = document.getElementById("preptime").value;
     let cooktime = document.getElementById("cooktime").value;
+
     localStorage.setItem("title", title);
     localStorage.setItem("ing1", ing1);
     localStorage.setItem("ing2", ing2);

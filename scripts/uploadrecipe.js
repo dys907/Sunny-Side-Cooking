@@ -23,10 +23,10 @@ firebase.auth().onAuthStateChanged(function (user) {
 
     db.collection("recipe").add({
         title: localStorage.getItem("title"),
-        ingredients: [localStorage.getItem("ing1"),
-        localStorage.getItem("ing2"),
-        localStorage.getItem("ing3"),
-        localStorage.getItem("ing4")],
+        ing1: localStorage.getItem("ing1"),
+        ing2: localStorage.getItem("ing2"),
+        ing3: localStorage.getItem("ing3"),
+        ing4: localStorage.getItem("ing4"),
         instructions: localStorage.getItem("instruction"),
         description: localStorage.getItem("description"),
         preptime: localStorage.getItem("preptime"),

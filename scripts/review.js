@@ -1,32 +1,6 @@
-
-
-
-// console.log(typeof(effortScore));
-// Update the current slider value (each time you drag the slider handle)
-// reviewTitle.oninput = function() {
-
-//     reviewTitleValue= this.value;
-// }
-
-// reviewBody.oninput = function() {
-
-//     reviewBodyValue= this.value;
-//  }
-//  sug.oninput = function() {
-
-//     sugValue= this.value;
-//  }
-// effort.oninput = function() {
-
-//    effortScore= this.value;
-// }
-// taste.oninput = function() {
-//     tasteScore= this.value;
-//  }
-// difficulty.oninput = function() {
-//     difficultyScore= this.value;
-//  } 
-
+    let queryString = decodeURIComponent(window.location.search);
+    let queries = queryString.split("?");
+    let id = queries[1];
 
 document.getElementById("submit").onclick = processForm;
 
@@ -40,7 +14,7 @@ function processForm(e) {
     let reviewBody = document.getElementById("reviewtext").value;
 
     if (reviewTitle.length != 0 && reviewBody.length != 0) {
-        db.collection("recipe").doc("01/").collection("review").add({
+        db.collection("recipe").doc(id).collection("review").add({
 
             effort: effortScore,
             taste: tasteScore,
@@ -61,29 +35,9 @@ function processForm(e) {
 
 }
 
-function addEffort() {
-    if (effortScore != undefined) {
-        
-            effort: effortScore
-
-        
-    }
-}
-
-function addTaste() {
-    if (tasteScore != undefined) {
-
-            taste: tasteScore
 
 
-    }
-}
 
-function addDifficulty() {
-    if (difficultyScore != undefined) {
-        db.collection("recipe").doc("01/").collection("review").add({
-            difficulty: difficultyScore
 
-        })
-    }
-}
+
+

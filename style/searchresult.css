@@ -12,7 +12,9 @@ html, body{
     padding: .8rem;
 
 }
-
+.container-fluid {
+    overflow: auto;
+}
 
 .nav-link {
     font-size: 1.3em !important;
@@ -24,6 +26,7 @@ html, body{
     object-fit: cover;
 }
 footer {
+    position: relative;
     background-color: #3f3f3f;
     color: #d5d5d5;
     padding-top: 2rem;
@@ -34,6 +37,7 @@ hr.light {
 }
 
 .jumbotron-fluid {
+    min-height: 100%;
     background-color: #FCB411;
     padding-bottom: 5rem;
 }

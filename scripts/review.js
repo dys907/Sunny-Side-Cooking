@@ -1,6 +1,15 @@
     let queryString = decodeURIComponent(window.location.search);
     let queries = queryString.split("?");
     let id = queries[1];
+    function displayRecipe() {
+
+        db.collection("recipe").doc(id)
+            .get()
+            .then(snap => {
+                document.getElementById("recipeName").innerHTML = snap.data().title;    
+            })
+    }
+    displayRecipe();
 
 document.getElementById("submit").onclick = processForm;
 

@@ -12,6 +12,8 @@ html, body{
     padding: .8rem;
 
 }
+
+
 .nav-link {
     font-size: 1.3em !important;
 }
@@ -26,6 +28,16 @@ footer {
     color: #d5d5d5;
     padding-top: 2rem;
 }
+hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+}
+
 .jumbotron-fluid {
+    background-color: #FCB411;
     padding-bottom: 5rem;
+}
+
+.padding {
+    padding-top: 3rem;
 }

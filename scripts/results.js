@@ -2,6 +2,7 @@ let queryString = decodeURIComponent(window.location.search);
 let queries = queryString.split("?");
 let search = queries[1].toLowerCase();
 console.log(search);
+
 const recipes = db.collection("recipe");
 let recipeArray;
 let counter = 1;
@@ -32,9 +33,25 @@ getAllRecipesWithIng().then(result => {
     result.forEach(docSnapshot => {
         //createCard();
         console.log(docSnapshot.data());
+        displayRecipe(docSnapshot.data(),docSnapshot.id);
         counter++;
     });
 });
+
+function displayRecipe(recipe, id) {
+    searchField = document.getElementById("searchContainer");
+    var n = recipe.title;
+    console.log(n);
+    var para = document.createElement("div");
+    para.setAttribute("id", id);
+    searchField.appendChild(para);
+    var node = document.createTextNode(n);
+    para.appendChild(node);
+    $("#" + id).click(function() {
+        window.location.href ="recipe.html?" + id;
+
+    })
+}
 //creates a card for each search result
 function createCard() {
     searchContainer = document.getElementById("searchContainer");

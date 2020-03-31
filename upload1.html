@@ -27,22 +27,31 @@
     <!----------------------->
     <!--  HTML Section -->
     <!----------------------->
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
-          <a href="main.html" class="navbar-brand">Sunny Side Cooking</a>
-          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ml-auto">
-              <a href="account.html" class="nav-item nav-link">My Account</a>
-            </div>
-          </div>
-        </nav>
+           
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+      <div class ="container-fluid">
+         
+              <a href="main.html" class="navbar-brand"><img src="images/logo_navbar.png"></a>
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <ul class="navbar-nav">
+                      <a href="upload1.html" class="nav-item nav-link">Upload</a>
+                      <a href="#" class="nav-item nav-link">Favourites</a>
+                  </ul>
+                  <ul class="navbar-nav ml-auto">
+                      <a href="account.html" class="nav-item nav-link">My Account</a>
+                  </ul>
+              </div>
+         
+      </div>
+  </nav>
 
 
         <form id="recipe" class="container my-5">
-          <h2 class="my-1 center">Upload a Recipe</h2>
+          <h2 class="display-4 center">Upload a Recipe</h2>
           <div class="form-group col-auto">
             <label for="Title">Title</label>
             <input type="text" class="form-control" id="uploadTitle" aria-describedby="title" placeholder="Title">
@@ -108,12 +117,45 @@
               <input type="file" class="form-control-file justify-content-center" id="exampleFormControlFile1">
             </div>
           </div>
-          <input type = "submit" id= "submit" class="btn btn-primary btn-block my-5">
+          <input type = "submit" id= "submit" class="btn btn-warning btn-block my-5">
         </form>
     
-        <div class = "footer fixed-bottom center " >
-            Sunny Side Cooking 2020
+  <!--------  Footer       ------>
+  <footer>
+    <div class = "container-fluid padding" >
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img src="images/logo_navbar.png">
+                <hr class="light">
+                <p>Email probably</p>
+                <p>Contact number</p>
+           
+                
+           
+            </div>
+            <div class="col-md-4">
+                <hr class="light">
+                <h4>Connect</h4>
+                <hr class="light">
+                <p>Instagram</p>
+                <p>Facebook</p>
+                
+                
+            </div>
+            <div class="col-md-4">
+                <hr class="light">
+                <h4>About us</h4>
+                <hr class="light">
+                <p>We are Term 1 students from BCIT making our first project in our COMP 1800 class</p>
+                <p>Made by Dylan, Francis, and Jeremy</p>
+                
+            </div>
+            
         </div>
+        
+       
+    </div>
+</footer>
 
     <!----------------------------------------------->
     <!-- JS: Boostrap, Firebase, API related    -->

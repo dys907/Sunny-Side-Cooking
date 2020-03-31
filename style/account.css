@@ -8,13 +8,19 @@ html, body{
     color: 222;
 
 }
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: grey;
-    color:white;
-    text-align:center;
+.navbar {
+  padding: .8rem;
 
+}
+.nav-link {
+  font-size: 1.3em !important;
+}
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
 }

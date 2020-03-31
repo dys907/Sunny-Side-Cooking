@@ -20,6 +20,9 @@ html, body{
     border-radius: 10px !important;
 }
 
+#loginwelcome {
+    font-size: 30px;
+}
 
 footer {
     background-color: #3f3f3f;
@@ -30,6 +33,7 @@ hr.light {
     border-top: 1px solid #d5d5d5;
     width: 75%;
 }
+
 
 #logo {
     height: 30vh;
@@ -51,4 +55,8 @@ hr.light {
 
 .container {
     background-color: orange;
+}
+
+.padding {
+    padding-top: 2rem;
 }

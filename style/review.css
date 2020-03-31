@@ -7,6 +7,13 @@ html, body{
     color: 222;
 
 }
+.navbar {
+    padding: .8rem;
+
+}
+.nav-link {
+    font-size: 1.3em !important;
+}
 #mainMenu {
     position: absolute;
     left: 35vw;
@@ -14,11 +21,19 @@ html, body{
     text-align:center;
     width: 30%;
 }
+footer {
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    padding-top: 2rem;
+}
+hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+}
 
 
 #recipePicture {
-    width: 320px;
-    height:160px;
+    width: 50%;
 
 }
 .pagePos {

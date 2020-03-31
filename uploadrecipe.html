@@ -28,86 +28,132 @@
     <!--  HTML Section -->
     <!------------------->
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a href="main.html" class="navbar-brand">Sunny Side Cooking</a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav">
-                <a href="upload-page.html" class="nav-item nav-link">Upload</a>
-                <a href="#" class="nav-item nav-link">Favourites</a>
-            </div>
-            <div class="md-form mt-0">
-                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-            </div>
-            <div class="navbar-nav ml-auto">
-                <a href="account.html" class="nav-item nav-link">My Account</a>
-            </div>
-        </div>
-    </nav>
-    <div class="container">
-        <h1 id="uploadTitle">Chicken Broccoli</h1>
-        <br>
-
-        <div class="row">
-            <div class="col-sm-4">
-                <div><img id="chicken" src="images/ChickenBroccoli.jpg">
-
-
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <h3>Ingredients</h3>
-                <ul>
-                    <li id="ing1">List</li>
-                    <li id="ing2">Will</li>
-                    <li id="ing3">Go</li>
-                    <li id="ing4">Here</li>
+<!--- NavBar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <div class ="container-fluid">
+       
+            <a href="main.html" class="navbar-brand"><img src="images/logo_navbar.png"></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <a href="upload1.html" class="nav-item nav-link">Upload</a>
+                    <a href="#" class="nav-item nav-link">Favourites</a>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <a href="account.html" class="nav-item nav-link">My Account</a>
                 </ul>
             </div>
-            <div class="col-sm-4">
-                <h3>Estimated Time</h3>
-                <p id="prep">Prep Time: xx minutes </p>
-                <p id="cook">Cook Time: xx minutes</p>
-
-            </div>
-        </div>
-
+       
     </div>
+</nav>
 
 
+<div class="col-xs 12 col-sm-12 col-md-9 col-lg-9 col-xl-10 padding">
+    <br>
+    <h1 id ="uploadTitle" class="display-3">user-recipe-name</h1>  
 
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <h2>Description</h2>
-                <p id="description">Your description will go here</p>
-            </div>
-            <div class="col-sm-9">
+</div>
+<div class="container-fluid">
+    <h3 id="prep">Prep time: 50 min</h3>
 
-                <h2>Instruction</h2>
-                <p id="instruction">Your description will go here</p>
-            </div>
+    <h3 id ="cook">Cook time: 30 min</h3>           
+
+
+</div>
+
+    <div class= "container-fluid padding">
+        <div class="row padding">
+     
+         <div class="col-lg-8">
+             <h2>Description</h2>
+             <p id="description">Your description will go here</p>
+     
+             <img src="images/foodhold.jpg" class="img-fluid">
+         </div>
+         <div class="col-lg-4">
+             <h2>Ingredients</h2>
+             <li id="ing1">List</li>
+             <li id="ing2">Will</li>
+             <li id="ing3">Go</li>
+             <li id="ing4">Here</li>
+             
+             <div class="col-">
+                 <hr class="dark">
+                 <h2>Directions</h2>
+                 <p id="instructions"> directions here</p>
+                 <br>
+     
+                 <div class="col py-5">
+                     <input type="submit" id="submit" class="btn btn-warning btn-block my-5">
+                 </div>
+                 <a href="review.html" class="btn btn-outline-secondary">Complete Recipe</a>
+         
+             </br>
+             </div>
+     
+         </div>
+         
+     
+     
         </div>
-    </div>
-
-
-
+     
+        </div>
+     
+         
+         </div>
+     
+     
+     
+     </div>
 
 
     <div class="container my-5">
-        <input type = "submit" value = "Complete" id= "complete" class="btn btn-primary">
-        <a href="upload1.html" class="btn btn-secondary">Edit</a>
+        <input type = "submit" value = "Complete" id= "complete" class="btn btn-warning">
+        <a href="upload1.html" class="btn btn-dark">Edit</a>
 
     </div>
 
 
-    <div class="footer fixed-bottom center ">
-        Sunny Side Cooking 2020
+     <!--------  Footer       ------>
+   <footer>
+    <div class = "container-fluid padding" >
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img src="images/logo_navbar.png">
+                <hr class="light">
+                <p>sunnysidecooking@sunnymail.com</p>
+                <p>772 513 1097</p>
+           
+                
+           
+            </div>
+            <div class="col-md-4">
+                <hr class="light">
+                <h4>Connect</h4>
+                <hr class="light">
+                <p>Instagram</p>
+                <p>Facebook</p>
+                
+                
+            </div>
+            <div class="col-md-4">
+                <hr class="light">
+                <h4>About us</h4>
+                <hr class="light">
+                <p>We are Term 1 students from BCIT making our first project in our COMP 1800 class</p>
+                <p>Made by Dylan, Francis, and Jeremy</p>
+                
+            </div>
+            
+        </div>
+        
+       
     </div>
+</footer>
 
 
     <!----------------------------------------------->

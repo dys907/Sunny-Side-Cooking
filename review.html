@@ -31,149 +31,117 @@
   <!--  HTML Section -->
   <!------------------->
 
-   <!-- NAV BAR -->
-   <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-    <div class ="container-fluid">
-       
-            <a href="main.html" class="navbar-brand"><img src="images/logo_navbar.png"></a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav">
-                    <a href="upload1.html" class="nav-item nav-link">Upload</a>
-                    <a href="#" class="nav-item nav-link">Favourites</a>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <a href="account.html" class="nav-item nav-link">My Account</a>
-                </ul>
-            </div>
-       
+  <!-- NAV BAR -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+
+      <a href="main.html" class="navbar-brand"><img src="images/logo_navbar.png"></a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <a href="upload1.html" class="nav-item nav-link">Upload</a>
+          <a href="#" class="nav-item nav-link">Favourites</a>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <a href="account.html" class="nav-item nav-link">My Account</a>
+        </ul>
+      </div>
+
     </div>
-</nav>
+  </nav>
 
-<!-- NAV BAR END -->
-<div class="jumbotron-fluid">
-  <div class="container">
-    <div class="center my-3">
-      <h2 class="display-4">Recipe Complete!</h2>
-      <h3 class="display-5">Review and Get Bonus XP!</h3>
-      <a href="main.html" class="btn btn-outline-secondary">Skip Review</a>
-    </div>
-
-    <div id="recipeName" class="center my-4">
-      <h4>Sushi</h4>
-    </div>
-
-    <div><img id="recipePicture" class="img-fluid d-block mx-auto" src="./images/foodhold.jpg"></div>
-    <div id="favourite" class="center my-3">Save to Favorites</div>
-
-    <div class="center my-5" id="level">LEVEL</div>
-
-    <h2 class="center">Rate the Dish!</h2>
-
-    <div class="center">
-      <h4>Taste</h4>
-    </div>
-
-
+  <!-- NAV BAR END -->
+  <div class="jumbotron-fluid">
     <div class="container">
-      <div class="d-flex">
-        <div class="mr-auto p-2">Bad</div>
-        <div class="p-2">Good</div>
-      </div>
-      <input id = "taste" type="range" class="custom-range" min="0" max="4" value = "2" id="Taste">
-      <div class="center">
-        <h4>Effort</h4>
-      </div>
-      <div class="d-flex">
-        <div class="mr-auto p-2">Little</div>
-        <div class="p-2">Lots</div>
-      </div>
-      <input  id = "effort" type="range" class="custom-range" min="0" max="4" value = "2" id="customRange2">
-      <div class="center">
-        <h4>Difficulty</h4>
-      </div>
-      <div class="d-flex">
-        <div class="mr-auto p-2">Easy</div>
-        <div class="p-2">Hard</div>
-      </div>
-      <input id = "difficulty" type="range" class="custom-range" min="0" max="4" value = "2" id="customRange2">
-    </div>
-
-    <h2 class="center my-2"> Would You Like To Leave A Public Review?</h2>
-
-    <form class="container">
-
-      <div class="form-group">
-        <h4>Add a headline</h4>
-        <input type="text" class="form-control" id="reviewtitle" aria-describedby="emailHelp"
-          placeholder="What's most important to know?">
+      <div class="center my-3">
+        <h2 class="display-4">Recipe Complete!</h2>
+        <h3 class="display-5">Review and Get Bonus XP!</h3>
+        <a href="main.html" class="btn btn-outline-secondary">Skip Review</a>
       </div>
 
-      <div class="form-group">
-        <h4>Write your review</h4>
-        <textarea class="form-control" id="reviewtext" rows="5"
-          placeholder="What did you like or dislike about the food or recipe?"></textarea>
+      <div id="recipeName" class="center my-4">
       </div>
-    </form>
 
-    <div>
-      <h2 class="center">Recipe Improvements</h2>
-    </div>
-    <br>
+      <div><img id="recipePicture" class="img-fluid d-block mx-auto" src="./images/foodhold.jpg"></div>
+      <div id="favourite" class="center my-3">Save to Favorites</div>
 
-    <!-- <div class="container">
-      <h4>Ingredient substitution</h4>
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="form-group">
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>Ingredient</option>
-              <option>Chicken</option>
-              <option>Broccoli</option>
-            </select>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <input class="form-control" type="text" placeholder="Replacement">
-        </div>
-      </div>
-      <div class="row my-2">
-        <div class="col-sm-6">
-          <div class="form-group">
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>Ingredient</option>
-              <option>Chicken</option>
-              <option>Broccoli</option>
-            </select>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <input class="form-control" type="text" placeholder="Replacement">
-        </div>
-      </div>
-    </div> -->
-    <div class="container">
-      <h4>Suggestions</h4>
-      <textarea class="form-control" id="reviewinput" rows="3"
-        placeholder="(Optional)Make suggestions towards the recipe. These will only be seen by the author."></textarea>
+      <div class="center my-5" id="level">LEVEL</div>
+
+      <h2 class="center">Rate the Dish!</h2>
 
       <div class="center">
-        <h2>Take a Photo of <br>Your Dish!</h2>
+        <h4>Taste</h4>
       </div>
-      <div><img class="img-fluid d-block mx-auto" src="./images/camera2.png"></div>
 
-      <div class="center"> Top voted pictures get featured on the<br>recipe and get bonus xp!</div>
+
+      <div class="container">
+        <div class="d-flex">
+          <div class="mr-auto p-2">Bad</div>
+          <div class="p-2">Good</div>
+        </div>
+        <input id="taste" type="range" class="custom-range" min="0" max="4" value="2" id="Taste">
+        <div class="center">
+          <h4>Effort</h4>
+        </div>
+        <div class="d-flex">
+          <div class="mr-auto p-2">Little</div>
+          <div class="p-2">Lots</div>
+        </div>
+        <input id="effort" type="range" class="custom-range" min="0" max="4" value="2" id="customRange2">
+        <div class="center">
+          <h4>Difficulty</h4>
+        </div>
+        <div class="d-flex">
+          <div class="mr-auto p-2">Easy</div>
+          <div class="p-2">Hard</div>
+        </div>
+        <input id="difficulty" type="range" class="custom-range" min="0" max="4" value="2" id="customRange2">
+      </div>
+
+      <h2 class="center my-2"> Would You Like To Leave A Public Review?</h2>
+
+      <form class="container">
+
+        <div class="form-group">
+          <h4>Add a headline</h4>
+          <input type="text" class="form-control" id="reviewtitle" aria-describedby="emailHelp"
+            placeholder="What's most important to know?">
+        </div>
+
+        <div class="form-group">
+          <h4>Write your review</h4>
+          <textarea class="form-control" id="reviewtext" rows="5"
+            placeholder="What did you like or dislike about the food or recipe?"></textarea>
+        </div>
+      </form>
+
+      <div>
+        <h2 class="center">Recipe Improvements</h2>
+      </div>
+      <br>
+
+      <div class="container">
+        <h4>Suggestions</h4>
+        <textarea class="form-control" id="reviewinput" rows="3"
+          placeholder="(Optional)Make suggestions towards the recipe. These will only be seen by the author."></textarea>
+
+        <div class="center">
+          <h2>Take a Photo of <br>Your Dish!</h2>
+        </div>
+        <div><img class="img-fluid d-block mx-auto" src="./images/camera2.png"></div>
+
+        <div class="center"> Top voted pictures get featured on the<br>recipe and get bonus xp!</div>
+      </div>
+      <div class=container>
+        <input type="submit" id="submit" class="btn btn-primary btn-block my-5">
+      </div>
     </div>
-    <div class=container>
-      <input type="submit" id="submit" class="btn btn-primary btn-block my-5">
-    </div>
-  </div>
 
 
-<!-- 
+    <!-- 
   <nav aria-label="...">
     <ul class="pagination justify-content-center pagePos">
       <li class="page-item disabled">
@@ -193,67 +161,74 @@
 
   <a id="mainMenu" class="btn btn-link" href="main.html" role="button">Main Menu</a> -->
 
-</div>
+  </div>
 
 
-      <!--------  Footer       ------>
-      <footer>
-        <div class = "container-fluid padding" >
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <img src="images/logo_navbar.png">
-                    <hr class="light">
-                    <p>Email probably</p>
-                    <p>Contact number</p>
-               
-                    
-               
-                </div>
-                <div class="col-md-4">
-                    <hr class="light">
-                    <h4>Connect</h4>
-                    <hr class="light">
-                    <p>Instagram</p>
-                    <p>Facebook</p>
-                    
-                    
-                </div>
-                <div class="col-md-4">
-                    <hr class="light">
-                    <h4>About us</h4>
-                    <hr class="light">
-                    <p>We are Term 1 students from BCIT making our first project in our COMP 1800 class</p>
-                    <p>Made by Dylan, Francis, and Jeremy</p>
-                    
-                </div>
-                
-            </div>
-            
-           
+  <!--------  Footer       ------>
+  <footer>
+    <div class="container-fluid padding">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <img src="images/logo_navbar.png">
+          <hr class="light">
+          <p>Email probably</p>
+          <p>Contact number</p>
+
+
+
         </div>
-    </footer>
-    <!----------------------------------------------->
-    <!-- JS: Boostrap, Firebase, API related    -->
-    <!----------------------------------------------->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <div class="col-md-4">
+          <hr class="light">
+          <h4>Connect</h4>
+          <hr class="light">
+          <p>Instagram</p>
+          <p>Facebook</p>
 
-    <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-firestore.js"></script>
-    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-    <script src="scripts/firebase_api_sunnyside.js"> </script>
-  
-    <!--------------------------------------------------------------------->
-    <!-- JS files: Your own JavaScript functions included here    -->
-    <!--------------------------------------------------------------------->
-    <script src="scripts/review.js"></script>
 
-     <!--------------------------------------------------------------------->
-    <!-- Make calls to your own JavaScript functions, here below-->
-    <!---------------------------------------------------------------------->
+        </div>
+        <div class="col-md-4">
+          <hr class="light">
+          <h4>About us</h4>
+          <hr class="light">
+          <p>We are Term 1 students from BCIT making our first project in our COMP 1800 class</p>
+          <p>Made by Dylan, Francis, and Jeremy</p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </footer>
+  <!----------------------------------------------->
+  <!-- JS: Boostrap, Firebase, API related    -->
+  <!----------------------------------------------->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-firestore.js"></script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+  <script src="scripts/firebase_api_sunnyside.js"> </script>
+
+  <!--------------------------------------------------------------------->
+  <!-- JS files: Your own JavaScript functions included here    -->
+  <!--------------------------------------------------------------------->
+  <script src="scripts/review.js"></script>
+
+  <!--------------------------------------------------------------------->
+  <!-- Make calls to your own JavaScript functions, here below-->
+  <!---------------------------------------------------------------------->
 
 
 </body>
-</html>        
+
+</html>

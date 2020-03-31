@@ -23,6 +23,14 @@ function processForm(e) {
             review: reviewBody
     
         }).then(function() {
+            firebase.auth().onAuthStateChanged(function (user) {
+                let increment = firebase.firestore.FieldValue.increment(10);
+                let dbref = db.collection("users/").doc(user.uid);
+            
+                dbref.update({
+                    experience: increment
+                })
+            })
             window.location.href = "reviewcomplete.html"
     
         });

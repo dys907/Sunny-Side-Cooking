@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>My BCIT Project</title>
@@ -10,278 +11,81 @@
     <!--  Meta tag for rendering on mobile devices -->
     <!----------------------------------------------->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <!----------------------------------------------->
     <!-- CSS: Bootstrap, Firebase, other API -->
     <!----------------------------------------------->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
-   
+
     <!------------------------>
     <!-- Your own CSS files -->
     <!------------------------>
     <link rel="stylesheet" href="style/account.css">
 
 </head>
+
 <body>
     <!----------------------->
     <!--  HTML Section -->
     <!----------------------->
-    
+
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-        <div class ="container-fluid">
-           
-                <a href="main.html" class="navbar-brand"><img src="images/logo_navbar.png"></a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-        
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav">
-                        <a href="upload1.html" class="nav-item nav-link">Upload</a>
-                        <a href="#" class="nav-item nav-link">Favourites</a>
-                    </ul>
-                    <ul class="navbar-nav ml-auto">
-                        <a href="account.html" class="nav-item nav-link">My Account</a>
-                    </ul>
-                </div>
-           
+        <div class="container-fluid">
+
+            <a href="main.html" class="navbar-brand"><img src="images/logo_navbar.png"></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <a href="upload1.html" class="nav-item nav-link">Upload</a>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <a href="account.html" class="nav-item nav-link">My Account</a>
+                </ul>
+            </div>
+
         </div>
     </nav>
 
     <div class="container-fluid padding">
-        <div class="row welcome ">
-            <h1 class="col-12">User Profile</h1>
-            <div class="col-12">
-                <h2 class="display-4" id = "username">Recent User Recipes</h2>
+            <h1 class ="display-4 center">User Profile</h1>
+            <div>
+                <h2 class="display-4 center" id="username">John Doe</h2>
+            </div>
+
+                <img id="profile-pic" class="img-fluid d-block mx-auto my-3" src="images/chef.png">
+
+
+
+        <h2 id ="level" class="lead">Current Level:</h2>
+        <div class="progress">
+            <div id = "exp" class="progress-bar bg-dark" role="progressbar" style="width: 100%" aria-valuenow="100"
+                aria-valuemin="0" aria-valuemax="100">
             </div>
         </div>
-
-        <h3 class="lead">Current Level:</h3>
-        <div class="progress"> <div class="progress-bar bg-dark" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div> </div>
         <hr class="my-4">
     </div>
-
-    <div class="container-fluid padding">
-        <div class="row welcome ">
-            <div class="col-12">
-                <h2>My Recipes</h2>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <div class="jumbotron-fluid">
-    <div class="container-fluid padding">
-     <div class="row padding">
-        <div class="col-md-3">
-            <div class="card">
-                <img class ="card-img-top" src="images/slide1.png">
-                <div class="card-body">
-                    <h4 class="card-title">Recipe Name</h4>
-                    <p class= "card-text">Brief description of dish</p>
-                    <a href="#" class="btn btn-outline-secondary">View Recipe</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card">
-                <img class ="card-img-top" src="images/slide2.jpg">
-                <div class="card-body">
-                    <h4 class="card-title">Recipe Name</h4>
-                    <p class= "card-text">Brief description of dish</p>
-                    <a href="#" class="btn btn-outline-secondary">View Recipe</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card">
-                <img class ="card-img-top" src="images/slide1.png">
-                <div class="card-body">
-                    <h4 class="card-title">Recipe Name</h4>
-                    <p class= "card-text">Brief description of dish</p>
-                    <a href="#" class="btn btn-outline-secondary">View Recipe</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card">
-                <img class ="card-img-top" src="images/slide1.png">
-                <div class="card-body">
-                    <h4 class="card-title">Recipe Name</h4>
-                    <p class= "card-text">Brief description of dish</p>
-                    <a href="#" class="btn btn-outline-secondary">View Recipe</a>
-                </div>
-            </div>
-        </div>
-        
-    
-     </div>   
-     <div class="row padding">
-        <div class="col-md-3">
-            <div class="card">
-                <img class ="card-img-top" src="images/slide1.png">
-                <div class="card-body">
-                    <h4 class="card-title">Recipe Name</h4>
-                    <p class= "card-text">Brief description of dish</p>
-                    <a href="#" class="btn btn-outline-secondary">View Recipe</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card">
-                <img class ="card-img-top" src="images/slide2.jpg">
-                <div class="card-body">
-                    <h4 class="card-title">Recipe Name</h4>
-                    <p class= "card-text">Brief description of dish</p>
-                    <a href="#" class="btn btn-outline-secondary">View Recipe</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card">
-                <img class ="card-img-top" src="images/slide1.png">
-                <div class="card-body">
-                    <h4 class="card-title">Recipe Name</h4>
-                    <p class= "card-text">Brief description of dish</p>
-                    <a href="#" class="btn btn-outline-secondary">View Recipe</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card">
-                <img class ="card-img-top" src="images/slide1.png">
-                <div class="card-body">
-                    <h4 class="card-title">Recipe Name</h4>
-                    <p class= "card-text">Brief description of dish</p>
-                    <a href="#" class="btn btn-outline-secondary">View Recipe</a>
-                </div>
-            </div>
-        </div>
-        
-    
-     </div>  
-    </div>
+    <div>
+        <h4 id = "uploaded" class="my-3">Recipes uploaded:</h4>
+        <h4 id = "reviewed" class="my-3">Recipes reviewed:</h4>
     </div>
 
-    <br>
-    <div class="container-fluid padding">
-        <div class="row welcome ">
-            <div class="col-12">
-                <h2>Favourites</h2>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <div class="jumbotron-fluid">
-    <div class="container-fluid padding">
-     <div class="row padding">
-        <div class="col-md-3">
-            <div class="card">
-                <img class ="card-img-top" src="images/slide1.png">
-                <div class="card-body">
-                    <h4 class="card-title">Recipe Name</h4>
-                    <p class= "card-text">Brief description of dish</p>
-                    <a href="#" class="btn btn-outline-secondary">View Recipe</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card">
-                <img class ="card-img-top" src="images/slide2.jpg">
-                <div class="card-body">
-                    <h4 class="card-title">Recipe Name</h4>
-                    <p class= "card-text">Brief description of dish</p>
-                    <a href="#" class="btn btn-outline-secondary">View Recipe</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card">
-                <img class ="card-img-top" src="images/slide1.png">
-                <div class="card-body">
-                    <h4 class="card-title">Recipe Name</h4>
-                    <p class= "card-text">Brief description of dish</p>
-                    <a href="#" class="btn btn-outline-secondary">View Recipe</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card">
-                <img class ="card-img-top" src="images/slide1.png">
-                <div class="card-body">
-                    <h4 class="card-title">Recipe Name</h4>
-                    <p class= "card-text">Brief description of dish</p>
-                    <a href="#" class="btn btn-outline-secondary">View Recipe</a>
-                </div>
-            </div>
-        </div>
-        
-    
-     </div>   
-     <div class="row padding">
-        <div class="col-md-3">
-            <div class="card">
-                <img class ="card-img-top" src="images/slide1.png">
-                <div class="card-body">
-                    <h4 class="card-title">Recipe Name</h4>
-                    <p class= "card-text">Brief description of dish</p>
-                    <a href="#" class="btn btn-outline-secondary">View Recipe</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card">
-                <img class ="card-img-top" src="images/slide2.jpg">
-                <div class="card-body">
-                    <h4 class="card-title">Recipe Name</h4>
-                    <p class= "card-text">Brief description of dish</p>
-                    <a href="#" class="btn btn-outline-secondary">View Recipe</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card">
-                <img class ="card-img-top" src="images/slide1.png">
-                <div class="card-body">
-                    <h4 class="card-title">Recipe Name</h4>
-                    <p class= "card-text">Brief description of dish</p>
-                    <a href="#" class="btn btn-outline-secondary">View Recipe</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card">
-                <img class ="card-img-top" src="images/slide1.png">
-                <div class="card-body">
-                    <h4 class="card-title">Recipe Name</h4>
-                    <p class= "card-text">Brief description of dish</p>
-                    <a href="#" class="btn btn-outline-secondary">View Recipe</a>
-                </div>
-            </div>
-        </div>
-        
-    
-     </div>  
-    </div>
-    </div>
-
-
-
-
-   
-
-      <!--------  Footer       ------>
-      <footer>
-        <div class = "container-fluid padding" >
+    <!--------  Footer       ------>
+    <footer>
+        <div class="container-fluid padding">
             <div class="row text-center">
                 <div class="col-md-4">
                     <img src="images/logo_navbar.png">
                     <hr class="light">
                     <p>Email probably</p>
                     <p>Contact number</p>
-               
-                    
-               
+
+
+
                 </div>
                 <div class="col-md-4">
                     <hr class="light">
@@ -289,8 +93,8 @@
                     <hr class="light">
                     <p>Instagram</p>
                     <p>Facebook</p>
-                    
-                    
+
+
                 </div>
                 <div class="col-md-4">
                     <hr class="light">
@@ -298,43 +102,47 @@
                     <hr class="light">
                     <p>We are Term 1 students from BCIT making our first project in our COMP 1800 class</p>
                     <p>Made by Dylan, Francis, and Jeremy</p>
-                    
+
                 </div>
-                
+
             </div>
-            
-           
+
+
         </div>
     </footer>
-    <!--------------------------------------
+    <!---------------------------------------------->
     <!----------------------------------------------->
     <!-- JS: Boostrap, Firebase, API related    -->
     <!----------------------------------------------->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
 
     <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-firestore.js"></script>
     <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
     <script src="scripts/firebase_api_sunnyside.js"> </script>
-  
+
     <!--------------------------------------------------------------------->
     <!-- JS files: Your own JavaScript functions included here    -->
     <!--------------------------------------------------------------------->
-    <script src="scripts/main.js"></script>
+    <script src="scripts/account.js"></script>
 
-     <!--------------------------------------------------------------------->
+    <!--------------------------------------------------------------------->
     <!-- Make calls to your own JavaScript functions, here below-->
     <!---------------------------------------------------------------------->
     <script>
-        firebase.auth().onAuthStateChanged(function(user){
-   console.log(user.displayName);
-   document.getElementById("username").innerHTML = user.displayName ;
-})
-   </script>
+       
+    </script>
 
 
 </body>
+
 </html>

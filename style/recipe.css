@@ -35,3 +35,10 @@ hr.light {
     border-top: 1px solid #d5d5d5;
     width: 75%;
 }
+
+.sunny-side {
+
+        background-color: #FCB411;
+        display:inline-block;
+
+}

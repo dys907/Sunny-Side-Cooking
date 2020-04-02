@@ -1,4 +1,6 @@
 let search = document.getElementById("anythingSearch");
+
+/**Takes the user to the results page if the enter key is pressed */
 search.onkeyup = function (event) {
 
     if (event.keyCode == 13) {

@@ -30,108 +30,106 @@
     <!--  HTML Section -->
     <!------------------->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-        <div class ="container-fluid">
-           
-                <a href="main.html" class="navbar-brand"><img src="images/logo_navbar.png"></a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-        
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav">
-                        <a href="upload1.html" class="nav-item nav-link">Upload</a>
-                    </ul>
-                    <ul class="navbar-nav ml-auto">
-                        <a href="account.html" class="nav-item nav-link">My Account</a>
-                    </ul>
-                </div>
-           
+        <div class="container-fluid">
+
+            <a href="main.html" class="navbar-brand"><img src="images/logo_navbar.png"></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <a href="upload1.html" class="nav-item nav-link">Upload</a>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <a href="account.html" class="nav-item nav-link">My Account</a>
+                </ul>
+            </div>
+
         </div>
     </nav>
-
-    <div class="center my-3">
-        <h2>Recipe Uploaded!</h2> 
-        <img src="images/logo_nobg.png">
-        <br>
-        
-        <h2>You Earned: 10 xp!</h2>
-        <div>You are currently:</div>
-        <div id = level></div>
-        <div id = remaining></div>
-    </div>
+        <div class="center">
+            <h2 class="my-3">Recipe Uploaded!</h2>
+            <img src="images/logo_nobg_small.png">
 
 
-    <div class ="d-flex justify-content-center h-50">
-        <a class="btn btn-dark my-auto" href="main.html" role="button">Return to Main Menu</a>
-    </div>
-
-
-    <!--------  Footer       ------>
-    <footer class="fixed-bottom">
-        <div class = "container-fluid padding" >
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <img src="images/logo_navbar.png">
-                    <hr class="light">
-                    <p>Email probably</p>
-                    <p>Contact number</p>
-               
-                    
-               
+            <h2 class="my-2">You Earned: 10 xp!</h2>
+            <h2 id="level" class="lead my-1">Current Level:</h2>
+            <div class="container-fluid padding">
+                <div class="progress">
+                    <div id="exp" class="progress-bar bg-dark" role="progressbar" style="width: 100%"
+                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <hr class="light">
-                    <h4>Connect</h4>
-                    <hr class="light">
-                    <p>Instagram</p>
-                    <p>Facebook</p>
-                    
-                    
-                </div>
-                <div class="col-md-4">
-                    <hr class="light">
-                    <h4>About us</h4>
-                    <hr class="light">
-                    <p>We are Term 1 students from BCIT making our first project in our COMP 1800 class</p>
-                    <p>Made by Dylan, Francis, and Jeremy</p>
-                    
-                </div>
-                
             </div>
+            <div class="d-flex justify-content-center h-50">
+                <a class="btn btn-dark my-auto" href="main.html" role="button">Return to Main Menu</a>
+            </div>
+
             
-           
         </div>
-    </footer>
 
-    <!----------------------------------------------->
-    <!-- JS: Boostrap, Firebase, API related    -->
-    <!----------------------------------------------->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+        <!--------  Footer       ------>
+        <footer>
+            <div class="container-fluid padding">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <img src="images/logo_navbar.png">
+                        <hr class="light">
+                        <p>Email probably</p>
+                        <p>Contact number</p>
+                    </div>
+                    <div class="col-md-4">
+                        <hr class="light">
+                        <h4>Connect</h4>
+                        <hr class="light">
+                        <p>Instagram</p>
+                        <p>Facebook</p>
 
-    <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-firestore.js"></script>
-    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-    <script src="scripts/firebase_api_sunnyside.js"> </script>
+                    </div>
+                    <div class="col-md-4">
+                        <hr class="light">
+                        <h4>About us</h4>
+                        <hr class="light">
+                        <p>We are Term 1 students from BCIT making our first project in our COMP 1800 class</p>
+                        <p>Made by Dylan, Francis, and Jeremy</p>
 
-    <!--------------------------------------------------------------------->
-    <!-- JS files: Your own JavaScript functions included here    -->
-    <!--------------------------------------------------------------------->
-    <script src="scripts/uploadcomplete.js"></script>
+                    </div>
 
-    <!--------------------------------------------------------------------->
-    <!-- Make calls to your own JavaScript functions, here below-->
-    <!---------------------------------------------------------------------->
+                </div>
+
+            </div>
+        </footer>
+
+        <!----------------------------------------------->
+        <!-- JS: Boostrap, Firebase, API related    -->
+        <!----------------------------------------------->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+
+        <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-firestore.js"></script>
+        <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+        <script src="scripts/firebase_api_sunnyside.js"> </script>
+
+        <!--------------------------------------------------------------------->
+        <!-- JS files: Your own JavaScript functions included here    -->
+        <!--------------------------------------------------------------------->
+        <script src="scripts/uploadcomplete.js"></script>
+
+        <!--------------------------------------------------------------------->
+        <!-- Make calls to your own JavaScript functions, here below-->
+        <!---------------------------------------------------------------------->
 
 
-    </body>
+</body>
 
-    </html>
+</html>

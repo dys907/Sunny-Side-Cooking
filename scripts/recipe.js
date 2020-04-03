@@ -1,4 +1,7 @@
-
+const reviews = db.collection("recipe").doc(queryResult()).collection("review");
+const tastes = document.getElementById("taste");
+const efforts = document.getElementById("effort");
+const difficulties = document.getElementById("difficulty");
 /**
  * Stores the research results.
  * @return the id of the search result
@@ -31,12 +34,144 @@ function displayRecipe() {
 }
 displayRecipe();
 
- //takes us to the review page
+/**Redirect to the review page which the query result attached to the href */
 document.getElementById("submit").onclick = processForm;
 function processForm(e) {
     e.preventDefault();
-
     window.location.href = "review.html?" + queryResult();
 }
 
-db.collection("recipe").doc(queryResult()).collection("review")
+/** Reads all the taste ratings using a promise then stores all snapshots of the scores in an array
+ * @return array with all the read taste ratings
+ */
+async function getAllTastes() {
+    const tasteScore = reviews.where("taste", ">=", 0).get();
+    const [tasteQuerySnapshot] = await Promise.all([
+        tasteScore
+    ]);
+    let tasteArray = tasteQuerySnapshot.docs;
+    return tasteArray;
+}
+
+/**
+ * Sums up the average taste of the recipe
+ * @return taste rating average  
+ * */
+
+function averageTaste() {
+    let sum = 0;
+    let counter = 0;
+    getAllTastes().then(result => {
+        result.forEach(docSnapshot => {
+            sum += docSnapshot.data().taste;
+            counter++
+        });
+        if (counter == 0) {
+            counter = 1;
+        }
+        average = sum / counter;
+        tastes.style = "width: " + ((average) / 4 * 100) + "%";
+        tasteColour(average);
+    });
+}
+
+/** Reads all the effort ratings using a promise then stores all snapshots of the scores in an array
+ * @return array with all the read effort ratings
+ */
+async function getAllEffort() {
+    const effortScore = reviews.where("effort", ">=", 0).get();
+    const [effortQuerySnapshot] = await Promise.all([
+        effortScore
+    ]);
+    let effortArray = effortQuerySnapshot.docs;
+    return effortArray;
+}
+
+/**
+ * Sums up the average effort of the recipe
+ * @return effort rating average  
+ * */
+
+function averageEffort() {
+    let sum = 0;
+    let counter = 0;
+    getAllEffort().then(result => {
+        result.forEach(docSnapshot => {
+            sum += docSnapshot.data().effort;
+            counter++
+        });
+        if (counter == 0) {
+            counter = 1;
+        }
+        average = sum / counter;
+        efforts.style = "width: " + ((average) / 4 * 100) + "%";
+        effortColour(average);
+    });
+}
+
+/** Reads all the difficulty ratings using a promise then stores all snapshots of the scores in an array
+ * @return array with all the read difficulty ratings
+ */
+async function getAllDifficulty() {
+    const difficultyScore = reviews.where("difficulty", ">=", 0).get();
+    const [difficultyQuerySnapshot] = await Promise.all([
+        difficultyScore
+    ]);
+    let difficultyArray = difficultyQuerySnapshot.docs;
+    return difficultyArray;
+}
+
+/**
+ * Sums up the average difficulty of the recipe
+ * @return difficulty rating average  
+ * */
+
+function averageDifficulty() {
+    let sum = 0;
+    let counter = 0;
+    let average = 0;
+    getAllDifficulty().then(result => {
+        result.forEach(docSnapshot => {
+            sum += docSnapshot.data().difficulty;
+            counter++
+        });
+        if (counter == 0) {
+            counter = 1;
+        }
+        average = sum / counter;
+        difficulties.style = "width: " + ((average) / 4 * 100) + "%";
+        difficultyColour(average);
+    });
+
+}
+averageDifficulty();
+averageEffort();
+averageTaste();
+
+
+/**Changes the color of the taste review bar depending on the rating of the item */
+function tasteColour(num) {
+    if (num < 1.5) {
+        tastes.className = "progress-bar bg-danger"
+    } else if (num > 3) {
+        tastes.className = "progress-bar bg-success"
+    }
+}
+
+/**Changes the color of the effort review bar depending on the rating of the item */
+function effortColour(num) {
+    if (num < 1.5) {
+        efforts.className = "progress-bar bg-danger"
+    } else if (num > 3) {
+        efforts.className = "progress-bar bg-success"
+    }
+}
+
+/**Changes the color of the effort review bar depending on the rating of the item */
+function difficultyColour(num) {
+    if (num < 1.5) {
+        difficulties.className = "progress-bar bg-danger"
+    } else if (num > 3) {
+        difficulties.className = "progress-bar bg-success"
+    }
+}

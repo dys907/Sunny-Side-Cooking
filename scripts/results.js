@@ -92,7 +92,7 @@ function createOneCard(c) {
     p.appendChild(text);
     var a = document.createElement("a");
     a.setAttribute("href","recipe.html?" + c.id);
-    a.setAttribute("class", "btn btn-outline-secondary");
+    a.setAttribute("class", "btn btn-outline-warning");
     var text = document.createTextNode("View Recipe");
     a.appendChild(text);
     cardbodydiv.appendChild(h4);

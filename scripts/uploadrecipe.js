@@ -29,7 +29,7 @@ function displayAll() {
 function processForm(e) {
     e.preventDefault();
 
-    incremenetValues();
+    incrementValues();
     addRecipe();  
 }
 

@@ -73,27 +73,27 @@ function displayCards(CardObjects, numCards) {
  */
 function createOneCard(c) { 
 
-    var coldiv = document.createElement("div");
+    let coldiv = document.createElement("div");
     coldiv.setAttribute("class", "col-md-3");
-    var carddiv = document.createElement("div");
+    let carddiv = document.createElement("div");
     carddiv.setAttribute("class", "card");
-    var img = document.createElement("img");
+    let img = document.createElement("img");
     img.setAttribute("class", "card-img-top");
     img.setAttribute("src", "images/logo_nobg_small.png");
-    var cardbodydiv = document.createElement("div");
+    let cardbodydiv = document.createElement("div");
     cardbodydiv.setAttribute("class", "card-body");
-    var h4 = document.createElement("h4");
+    let h4 = document.createElement("h4");
     h4.setAttribute("class", "card-title");
-    var text = document.createTextNode(c.data().title);
+    let text = document.createTextNode(c.data().title);
     h4.appendChild(text);
-    var p = document.createElement("p");
+    let p = document.createElement("p");
     p.setAttribute("class", "card-text");
-    var text = document.createTextNode(c.data().description);
+    let text = document.createTextNode(c.data().description);
     p.appendChild(text);
-    var a = document.createElement("a");
+    let a = document.createElement("a");
     a.setAttribute("href","recipe.html?" + c.id);
     a.setAttribute("class", "btn btn-outline-warning");
-    var text = document.createTextNode("View Recipe");
+    let text = document.createTextNode("View Recipe");
     a.appendChild(text);
     cardbodydiv.appendChild(h4);
     cardbodydiv.appendChild(p);

@@ -1,31 +1,37 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
 
-html, body{
+html,
+body {
     height: 100%;
     width: 100%;
     font-family: 'Roboto Slab', serif;
     color: 222;
 
 }
+
 .navbar {
     padding: .8rem;
 
 }
+
 .nav-link {
     font-size: 1.3em !important;
 }
+
 #mainMenu {
     position: absolute;
     left: 35vw;
     bottom: 4vh;
-    text-align:center;
+    text-align: center;
     width: 30%;
 }
+
 footer {
     background-color: #3f3f3f;
     color: #d5d5d5;
     padding-top: 2rem;
 }
+
 hr.light {
     border-top: 1px solid #d5d5d5;
     width: 75%;
@@ -36,14 +42,16 @@ hr.light {
     width: 50%;
 
 }
+
 .pagePos {
     position: absolute;
     left: 35vw;
     bottom: 10vh;
-    text-align:center;
+    text-align: center;
     width: 30%;
 
 }
+
 /*#level {
     position:absolute;
     width: 20vw;
@@ -57,14 +65,15 @@ hr.light {
 .center {
     text-align: center;
 }
+
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: grey;
-    color:white;
-    text-align:center;
+    color: white;
+    text-align: center;
 
 }
 
@@ -74,6 +83,6 @@ hr.light {
     bottom: 5vh;
     margin-bottom: 40;
     width: 22vw;
-    color:white;
-    text-align:center;
+    color: white;
+    text-align: center;
 }

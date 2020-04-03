@@ -1,14 +1,20 @@
-//submit button that brings text field information to the next page.
+loadData();
 document.getElementById("submit").onclick = processForm;
+
+/**
+ * Takes the values of all the text fields and stores it into local storage to use
+ * in the uploadrecipes page. The function will not work if the event handler is not
+ * correct.
+ @param {*} e 
+ *          event that prevents functionality if not handled
+ */
 function processForm(e) {
   e.preventDefault();
   let title = document.getElementById("uploadTitle").value;
-  //NEED THIS PART DYNAMICALLY---------------------------------------
   let ing1 = document.getElementById("ing1").value;
   let ing2 = document.getElementById("ing2").value;
   let ing3 = document.getElementById("ing3").value;
   let ing4 = document.getElementById("ing4").value;
-  //NEED THIS PART DYNAMICALLY---------------------------------------
   let instruction = document.getElementById("instruction").value;
   let description = document.getElementById("description").value;
   let preptime = document.getElementById("preptime").value;
@@ -23,11 +29,15 @@ function processForm(e) {
   localStorage.setItem("description", description);
   localStorage.setItem("preptime", preptime);
   localStorage.setItem("cooktime", cooktime);
-  window.location.href = "uploadrecipe.html"
-  //all passed to uploadrecipe.html    
+  window.location.href = "uploadrecipe.html"  
 }
 
+ /**
+  * Loads the stored values back to the text fields when the page is reloaded before
+  * submission.
+  */
 function loadData() {
+  
   document.querySelector("#uploadTitle").value = localStorage.getItem("title");
   document.querySelector("#ing1").value = localStorage.getItem("ing1");
   document.querySelector("#ing2").value = localStorage.getItem("ing2");
@@ -39,5 +49,3 @@ function loadData() {
   document.querySelector("#cooktime").value = localStorage.getItem("cooktime");
 
 }
-
-loadData();

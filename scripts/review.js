@@ -1,3 +1,6 @@
+showExp();
+displayRecipe();
+document.getElementById("submit").onclick = processForm;
 /**
  * Gets the search result from the main page.
  * @return search result
@@ -8,7 +11,6 @@ function idResult() {
     let id = queries[1];
     return id;
 }
-
 
 /**
  * Reads the user experience points of the user from firebase and 
@@ -31,7 +33,6 @@ function showExp() {
     })
 }
 
-showExp();
 /**
  * Gets the level of the user.
  * @param exp
@@ -42,6 +43,7 @@ function calcLevel(exp) {
     let level = Math.floor(exp / 100);
     return level;
 }
+
 /**
  * Gets the level of the user.
  * @param exp
@@ -61,14 +63,16 @@ function displayRecipe() {
             document.getElementById("recipeName").innerHTML = snap.data().title;
         })
 }
-displayRecipe();
 
-
-document.getElementById("submit").onclick = processForm;
-
+/**
+ * Takes the values of each HTML textfield and writes an integer value for ratings and strings for reviews.
+ * A validation check is used in case important fields are left blank. If no rating change is done, the
+ * default score of 2 will be given.
+ * @param {*} e 
+ *          event that prevents functionality if not handled
+ */
 function processForm(e) {
     e.preventDefault();
-
     let effortScore = document.getElementById("effort").value;
     let tasteScore = document.getElementById("taste").value;
     let difficultyScore = document.getElementById("difficulty").value;
@@ -77,25 +81,24 @@ function processForm(e) {
 
     if (reviewTitle.length != 0 && reviewBody.length != 0) {
         db.collection("recipe").doc(idResult()).collection("review").add({
-
             effort: parseInt(effortScore),
             taste: parseInt(tasteScore),
             difficulty: parseInt(difficultyScore),
-            reviewheader: parseInt(reviewTitle),
-            review: parseInt(reviewBody)
-
+            reviewheader: reviewTitle,
+            review: reviewBody
         }).then(function () {
             incrementAmounts();
             window.location.href = "reviewcomplete.html"
         });
-
     } else {
         alert("Please fill out your review heading and message");
     }
-
-
 }
 
+/**
+ * Increments the experience value by 10 and 
+ * increases reviews done by user by 1. This is written and updated into firebase.
+ */
 function incrementAmounts() {
     firebase.auth().onAuthStateChanged(function (user) {
         let increment = firebase.firestore.FieldValue.increment(10);

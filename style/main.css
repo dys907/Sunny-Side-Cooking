@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
 
-html, body{
+html,
+body {
     height: 100%;
     width: 100%;
     font-family: 'Roboto Slab', serif;
@@ -12,6 +13,7 @@ html, body{
     padding: .8rem;
 
 }
+
 .nav-link {
     font-size: 1.3em !important;
 }
@@ -29,6 +31,7 @@ footer {
     color: #d5d5d5;
     padding-top: 2rem;
 }
+
 hr.light {
     border-top: 1px solid #d5d5d5;
     width: 75%;
@@ -38,6 +41,7 @@ hr.light {
 #logo {
     height: 30vh;
 }
+
 .container-fluid {
     font-family: 'Roboto Slab', serif;
 }
@@ -48,9 +52,9 @@ hr.light {
 
 .jumbotron {
     background-color: #FCB411;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana,sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;
-    font-weight: 600; 
+    font-weight: 600;
 }
 
 .container {

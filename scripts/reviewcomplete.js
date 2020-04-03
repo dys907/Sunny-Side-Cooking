@@ -1,5 +1,4 @@
-
-
+showExp();
 
 /**
  * Reads the user experience points of the user from firebase and 
@@ -21,8 +20,6 @@ function showExp() {
     
     })
 }
-
-showExp();
 /**
  * Gets the level of the user.
  * @param exp

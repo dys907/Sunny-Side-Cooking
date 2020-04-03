@@ -1,5 +1,17 @@
 const recipes = db.collection("recipe");
 
+printResult();
+
+/**
+ * Generates card with the searched results using an asynchronous callback.
+ * @param results 
+ *          the results of the search query
+ */
+getAllRecipesWithIng().then(result => {
+    displayCards(result);
+});
+
+
 /**
  * Gets the search result from the main page.
  * @return search result
@@ -11,11 +23,12 @@ function searchResult() {
     return search;
 }
 
-/**Prints the search result to the html page */
+/**
+ * Prints the search result to the html page 
+ */
 function printResult() {
     document.getElementById("searchTitle").innerHTML = "Searching for: " + searchResult();
 }
-printResult();
 
 /**
  * Searches for the query request amoung the 4 ingredients in the 
@@ -35,7 +48,6 @@ async function getAllRecipesWithIng() {
         ing3,
         ing4
     ]);
-
     const ing1Array = ing1QuerySnapshot.docs;
     const ing2Array = ing2QuerySnapshot.docs;
     const ing3Array = ing3QuerySnapshot.docs;
@@ -45,14 +57,9 @@ async function getAllRecipesWithIng() {
     return recipeArray;
 
 }
-/**Generates card with the searched results*/
-getAllRecipesWithIng().then(result => {
-        displayCards(result);
-        displayRecipe(docSnapshot.data(), docSnapshot.id);
-});
-
-
-/**Generates 4 cards with the search results */ 
+/**
+ * Generates 4 cards with the search results 
+ */ 
 function displayCards(CardObjects, numCards) {
     CardObjects.forEach(function (doc) {
             createOneCard(doc);
@@ -60,7 +67,10 @@ function displayCards(CardObjects, numCards) {
         })
 
 }
-/**Creates dynamic bootstrap cards */
+/**Creates dynamic bootstrap cards based on the number of query matches in the 
+ * @param c 
+ *      reads the selected doc files found in the search.
+ */
 function createOneCard(c) { 
 
     var coldiv = document.createElement("div");

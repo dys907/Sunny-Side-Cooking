@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
 
-html, body{
+html,
+body {
     height: 100%;
     width: 100%;
     font-family: 'Roboto Slab', serif;
@@ -12,6 +13,7 @@ html, body{
     padding: .8rem;
 
 }
+
 .container-fluid {
     overflow: auto;
 }
@@ -25,12 +27,14 @@ html, body{
     height: 15vw !important;
     object-fit: cover;
 }
+
 footer {
     position: relative;
     background-color: #3f3f3f;
     color: #d5d5d5;
     padding-top: 2rem;
 }
+
 hr.light {
     border-top: 1px solid #d5d5d5;
     width: 75%;

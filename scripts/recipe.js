@@ -2,6 +2,13 @@ const reviews = db.collection("recipe").doc(queryResult()).collection("review");
 const tastes = document.getElementById("taste");
 const efforts = document.getElementById("effort");
 const difficulties = document.getElementById("difficulty");
+
+
+displayRecipe();
+averageDifficulty();
+averageEffort();
+averageTaste();
+
 /**
  * Stores the research results.
  * @return the id of the search result
@@ -12,7 +19,6 @@ function queryResult() {
     let id = queries[1];
     return id;
 }
-
 
 /**Reads the recipe information from firebase and displays all relevant elements in the HTML*/
 function displayRecipe() {
@@ -28,20 +34,20 @@ function displayRecipe() {
             document.getElementById("cooktime").innerHTML = "Cook Time: " + snap.data().cooktime + " minutes";
             document.getElementById("description").innerHTML = snap.data().description;
             document.getElementById("instructions").innerHTML = snap.data().instructions;
-
-
         })
 }
-displayRecipe();
 
-/**Redirect to the review page which the query result attached to the href */
+/**
+ * Redirect to the review page which the query result attachs to the url on redirect.
+ */
 document.getElementById("submit").onclick = processForm;
 function processForm(e) {
     e.preventDefault();
     window.location.href = "review.html?" + queryResult();
 }
 
-/** Reads all the taste ratings using a promise then stores all snapshots of the scores in an array
+/** 
+ * Reads all the taste ratings using a promise then stores all snapshots of the scores in an array
  * @return array with all the read taste ratings
  */
 async function getAllTastes() {
@@ -54,10 +60,9 @@ async function getAllTastes() {
 }
 
 /**
- * Sums up the average taste of the recipe
- * @return taste rating average  
- * */
-
+ * Reads associated values from firebase. Sums up the average taste of the recipe using a for each of all 
+ * elements in the array.
+ */
 function averageTaste() {
     let sum = 0;
     let counter = 0;
@@ -75,7 +80,8 @@ function averageTaste() {
     });
 }
 
-/** Reads all the effort ratings using a promise then stores all snapshots of the scores in an array
+/** 
+ * Reads all the effort ratings using a promise then stores all snapshots of the scores in an array
  * @return array with all the read effort ratings
  */
 async function getAllEffort() {
@@ -88,10 +94,9 @@ async function getAllEffort() {
 }
 
 /**
- * Sums up the average effort of the recipe
- * @return effort rating average  
- * */
-
+ * Reads associated values from firebase. Sums up the average effort of the recipe using a for each of all 
+ * elements in the array.
+ */
 function averageEffort() {
     let sum = 0;
     let counter = 0;
@@ -108,8 +113,8 @@ function averageEffort() {
         effortColour(average);
     });
 }
-
-/** Reads all the difficulty ratings using a promise then stores all snapshots of the scores in an array
+/** 
+ * Reads all the difficulty ratings using a promise then stores all snapshots of the scores in an array
  * @return array with all the read difficulty ratings
  */
 async function getAllDifficulty() {
@@ -123,9 +128,7 @@ async function getAllDifficulty() {
 
 /**
  * Sums up the average difficulty of the recipe
- * @return difficulty rating average  
- * */
-
+ */
 function averageDifficulty() {
     let sum = 0;
     let counter = 0;
@@ -144,12 +147,12 @@ function averageDifficulty() {
     });
 
 }
-averageDifficulty();
-averageEffort();
-averageTaste();
 
-
-/**Changes the color of the taste review bar depending on the rating of the item */
+/**
+ * Changes the color of the taste review bar depending on the rating of the item 
+ * @param num 
+ *          the value assosiated to the average rating.
+ */
 function tasteColour(num) {
     if (num < 1.5) {
         tastes.className = "progress-bar bg-danger"
@@ -158,7 +161,11 @@ function tasteColour(num) {
     }
 }
 
-/**Changes the color of the effort review bar depending on the rating of the item */
+/**
+ * Changes the color of the effort review bar depending on the rating of the item 
+ * @param num 
+ *          the value assosiated to the average rating.
+ */
 function effortColour(num) {
     if (num < 1.5) {
         efforts.className = "progress-bar bg-danger"
@@ -167,7 +174,11 @@ function effortColour(num) {
     }
 }
 
-/**Changes the color of the effort review bar depending on the rating of the item */
+/**
+ * Changes the color of the difficulty review bar depending on the rating of the item 
+ * @param num 
+ *          the value assosiated to the average rating.
+ */
 function difficultyColour(num) {
     if (num < 1.5) {
         difficulties.className = "progress-bar bg-danger"

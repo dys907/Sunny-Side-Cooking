@@ -1,3 +1,7 @@
+
+
+userInfo();
+
 /**
  * Reads the data of the logged in user. Sends the user's name, experience, upload count and 
  * review count onto the HTML page. Experience is calculated into levels and remaining
@@ -21,7 +25,7 @@ function userInfo() {
    
    })
 }
-userInfo();
+
 /**
  * Gets the level of the user.
  * @param exp

@@ -7,16 +7,16 @@
 function showExp() {
    let rawEXP;
    firebase.auth().onAuthStateChanged(function (user) {
-       let dbref = db.collection("users/").doc(user.uid);
-       dbref.get()
-            .then(snap => {
-               rawEXP = snap.data().experience;
-               document.getElementById("level").innerHTML = "Current level: " + calcLevel(rawEXP);
-               document.getElementById("exp").style = "width: " + calcExp(rawEXP) + "%";
-               document.getElementById("exp").innerHTML =  calcExp(rawEXP) + " / 100" ;
-               document.getElementById("exp").style.color = "black";
-            })
-   
+      let dbref = db.collection("users/").doc(user.uid);
+      dbref.get()
+         .then(snap => {
+            rawEXP = snap.data().experience;
+            document.getElementById("level").innerHTML = "Current level: " + calcLevel(rawEXP);
+            document.getElementById("exp").style = "width: " + calcExp(rawEXP) + "%";
+            document.getElementById("exp").innerHTML = calcExp(rawEXP) + " / 100";
+            document.getElementById("exp").style.color = "black";
+         })
+
    })
 }
 

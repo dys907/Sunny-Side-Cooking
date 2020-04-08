@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Review Your Dish</title>
+    <title>Review Complete</title>
     <meta name="comp1800 boilerplate code" content="my bcit project">
     <meta name="Dylan" content="SunnySideCooking">
 
@@ -21,16 +21,14 @@
     <!------------------------>
     <link rel="stylesheet" href="style/review.css">
 
-    <style>
-
-    </style>
 </head>
 
 <body>
     <!------------------->
     <!--  HTML Section -->
     <!------------------->
-    <!-- NAV BAR -->
+
+    <!--------  Nav-Bar  ------->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
 
@@ -47,14 +45,14 @@
                     <a href="account.html" class="nav-item nav-link">My Account</a>
                 </ul>
             </div>
-
         </div>
     </nav>
 
-    <!-- NAV BAR END -->
+    <!--------  Review Complete  ------->
 
 
     <h2 class="center my-3"> You Gained 10 Points!</h2>
+
     <div class="jumbotron bg-light my-5">
         <h2 id="level" class="lead my-5 center"></h2>
         <div class="container-fluid padding">
@@ -70,17 +68,15 @@
 
     <div class="d-flex justify-content-center">
         <a href="main.html" class="btn btn-lg btn-warning">Done!</a>
-
     </div>
 
     <div>
         <h1>You may also like</h1>
-
-
     </div>
 
     <div class="jumbotron-fluid">
         <div class="container-fluid padding">
+
             <div class="row padding">
                 <div class="col-md-3">
                     <div class="card">
@@ -92,6 +88,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-3">
                     <div class="card">
                         <img class="card-img-top" src="images/slide2.jpg">
@@ -102,6 +99,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-3">
                     <div class="card">
                         <img class="card-img-top" src="images/slide1.png">
@@ -112,6 +110,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-3">
                     <div class="card">
                         <img class="card-img-top" src="images/slide1.png">
@@ -122,62 +121,67 @@
                         </div>
                     </div>
                 </div>
+
             </div>
-
-            <!--------  Footer       ------>
-            <footer>
-                <div class="container-fluid padding">
-                    <div class="row text-center">
-                        <div class="col-md-4">
-                            <img src="images/logo_navbar.png">
-                            <hr class="light">
-                            <p>sunnysidecooking@sunnymail.com</p>
-                            <p>772 513 1097</p>
-                        </div>
-                        <div class="col-md-4">
-                            <hr class="light">
-                            <h4>Connect</h4>
-                            <hr class="light">
-                            <p>Instagram</p>
-                            <p>Facebook</p>
-                        </div>
-                        <div class="col-md-4">
-                            <hr class="light">
-                            <h4>About us</h4>
-                            <hr class="light">
-                            <p>We are Term 1 students from BCIT making our first project in our COMP 1800 class</p>
-                            <p>Made by Dylan, Francis, and Jeremy</p>
-                        </div>
-                    </div>
+        </div>
+    </div>
+    <!--------  Footer       ------>
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="images/logo_navbar.png">
+                    <hr class="light">
+                    <p>sunnysidecooking@sunnymail.com</p>
+                    <p>772 513 1097</p>
                 </div>
-            </footer>
-            <!----------------------------------------------->
-            <!-- JS: Boostrap, Firebase, API related    -->
-            <!----------------------------------------------->
-            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-                crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-                crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-                crossorigin="anonymous"></script>
 
-            <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-app.js"></script>
-            <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-auth.js"></script>
-            <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-firestore.js"></script>
-            <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-            <script src="scripts/firebase_api_sunnyside.js"> </script>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h4>Connect</h4>
+                    <hr class="light">
+                    <p>Instagram</p>
+                    <p>Facebook</p>
+                </div>
 
-            <!--------------------------------------------------------------------->
-            <!-- JS files: Your own JavaScript functions included here    -->
-            <!--------------------------------------------------------------------->
-            <script src="scripts/reviewcomplete.js"></script>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h4>About us</h4>
+                    <hr class="light">
+                    <p>We are Term 1 students from BCIT making our first project in our COMP 1800 class</p>
+                    <p>Made by Dylan, Francis, and Jeremy</p>
+                </div>
 
-            <!--------------------------------------------------------------------->
-            <!-- Make calls to your own JavaScript functions, here below-->
-            <!---------------------------------------------------------------------->
+            </div>
+        </div>
+    </footer>
+    <!----------------------------------------------->
+    <!-- JS: Boostrap, Firebase, API related    -->
+    <!----------------------------------------------->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-firestore.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="scripts/firebase_api_sunnyside.js"> </script>
+
+    <!--------------------------------------------------------------------->
+    <!-- JS files: Your own JavaScript functions included here    -->
+    <!--------------------------------------------------------------------->
+    <script src="scripts/reviewcomplete.js"></script>
+
+    <!--------------------------------------------------------------------->
+    <!-- Make calls to your own JavaScript functions, here below-->
+    <!---------------------------------------------------------------------->
 
 
 </body>

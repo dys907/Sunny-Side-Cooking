@@ -62,6 +62,7 @@ It has the following subfolders:
 	/chef.png				 # Account page stock profile picture. Taken from https://www.pinterest.com
 	/foodhold.jpg 			 # Placeholder picture for all recipe page images. Taken from https://www.fiverr.com
 	/logo_navbar.png		 # Logo image used on all nav-bars and footers. Commissioned by Francis Sapanta
+	/logo_nobg.png			 # Landing page logo. Commissioned by Francis Sapanta
 	/logo_nobg_small.png	 # Placeholder image for all search result cards. Also used for upload complete page. Comisssioned by Francis Sapanta
 	/slide1.png				 # Placeholder image for jumbotron images. One of two, taken from https://www.delish.com
 	/slide2.png				 # Placeholder image for jumbotron images. Two of two, taken from https://www.wallpaperflare.com
